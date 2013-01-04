@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Twig_Environment | Twig API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                        <link rel="search" type="application/opensearchdescription+xml" href="../v1.0.0/opensearch.xml" title="Twig API (v1.0.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.1.0/opensearch.xml" title="Twig API (v1.1.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.1.1/opensearch.xml" title="Twig API (v1.1.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.1.2/opensearch.xml" title="Twig API (v1.1.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.2.0/opensearch.xml" title="Twig API (v1.2.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.3.0/opensearch.xml" title="Twig API (v1.3.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.4.0/opensearch.xml" title="Twig API (v1.4.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.5.0/opensearch.xml" title="Twig API (v1.5.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.5.1/opensearch.xml" title="Twig API (v1.5.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.0/opensearch.xml" title="Twig API (v1.6.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.1/opensearch.xml" title="Twig API (v1.6.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.2/opensearch.xml" title="Twig API (v1.6.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.3/opensearch.xml" title="Twig API (v1.6.3)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.4/opensearch.xml" title="Twig API (v1.6.4)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.5/opensearch.xml" title="Twig API (v1.6.5)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.7.0/opensearch.xml" title="Twig API (v1.7.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.0/opensearch.xml" title="Twig API (v1.8.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.1/opensearch.xml" title="Twig API (v1.8.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.2/opensearch.xml" title="Twig API (v1.8.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.3/opensearch.xml" title="Twig API (v1.8.3)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.9.0/opensearch.xml" title="Twig API (v1.9.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.9.1/opensearch.xml" title="Twig API (v1.9.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.9.2/opensearch.xml" title="Twig API (v1.9.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.0/opensearch.xml" title="Twig API (v1.10.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.1/opensearch.xml" title="Twig API (v1.10.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.2/opensearch.xml" title="Twig API (v1.10.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.3/opensearch.xml" title="Twig API (v1.10.3)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.11.0/opensearch.xml" title="Twig API (v1.11.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.11.1/opensearch.xml" title="Twig API (v1.11.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="opensearch.xml" title="Twig API (master)" />
+                </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Twig API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="http://twig.sensiolabs.org/api/master/.html"></a>Twig_Environment</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Twig_Environment</strong></p>
+
+            <div class="description">
+            <p>Stores the Twig configuration.</p>
+            <p></p>
+        </div>
+    
+            <h2>Constants</h2>
+
+            <table>
+                    <tr>
+                <td>VERSION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method___construct">__construct</a>(<a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a> $loader = null, array $options = array())
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getBaseTemplateClass">getBaseTemplateClass</a>()
+                    <p>Gets the base template class for compiled templates.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setBaseTemplateClass">setBaseTemplateClass</a>(string $class)
+                    <p>Sets the base template class for compiled templates.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_enableDebug">enableDebug</a>()
+                    <p>Enables debugging mode.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_disableDebug">disableDebug</a>()
+                    <p>Disables debugging mode.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Boolean
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_isDebug">isDebug</a>()
+                    <p>Checks if debug mode is enabled.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_enableAutoReload">enableAutoReload</a>()
+                    <p>Enables the auto_reload option.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_disableAutoReload">disableAutoReload</a>()
+                    <p>Disables the auto_reload option.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Boolean
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_isAutoReload">isAutoReload</a>()
+                    <p>Checks if the auto_reload option is enabled.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_enableStrictVariables">enableStrictVariables</a>()
+                    <p>Enables the strict_variables option.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_disableStrictVariables">disableStrictVariables</a>()
+                    <p>Disables the strict_variables option.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Boolean
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_isStrictVariables">isStrictVariables</a>()
+                    <p>Checks if the strict_variables option is enabled.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string|<abbr title="false">false</abbr>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getCache">getCache</a>()
+                    <p>Gets the cache directory or false if cache is disabled.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setCache">setCache</a>(string|<abbr title="false">false</abbr> $cache)
+                    <p>Sets the cache directory or false if cache is disabled.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getCacheFilename">getCacheFilename</a>(string $name)
+                    <p>Gets the cache filename for a given template.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getTemplateClass">getTemplateClass</a>(string $name, integer $index = null)
+                    <p>Gets the template class associated with the given string.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getTemplateClassPrefix">getTemplateClassPrefix</a>()
+                    <p>Gets the template class prefix.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_render">render</a>(string $name, array $context = array())
+                    <p>Renders a template.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_display">display</a>(string $name, array $context = array())
+                    <p>Displays a template.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_TemplateInterface.html"><abbr title="Twig_TemplateInterface">Twig_TemplateInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_loadTemplate">loadTemplate</a>(string $name, integer $index = null)
+                    <p>Loads a template by name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Boolean
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_isTemplateFresh">isTemplateFresh</a>(string $name, <abbr title="timestamp">timestamp</abbr> $time)
+                    <p>Returns true if the template is still fresh.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_resolveTemplate">resolveTemplate</a>($names)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_clearTemplateCache">clearTemplateCache</a>()
+                    <p>Clears the internal template cache.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_clearCacheFiles">clearCacheFiles</a>()
+                    <p>Clears the template cache files on the filesystem.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_LexerInterface.html"><abbr title="Twig_LexerInterface">Twig_LexerInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getLexer">getLexer</a>()
+                    <p>Gets the Lexer instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setLexer">setLexer</a>(<a href="Twig_LexerInterface.html"><abbr title="Twig_LexerInterface">Twig_LexerInterface</abbr></a> $lexer)
+                    <p>Sets the Lexer instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_TokenStream.html"><abbr title="Twig_TokenStream">Twig_TokenStream</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_tokenize">tokenize</a>(string $source, string $name = null)
+                    <p>Tokenizes a source code.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getParser">getParser</a>()
+                    <p>Gets the Parser instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setParser">setParser</a>(<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a> $parser)
+                    <p>Sets the Parser instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_Node_Module.html"><abbr title="Twig_Node_Module">Twig_Node_Module</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_parse">parse</a>(<a href="Twig_TokenStream.html"><abbr title="Twig_TokenStream">Twig_TokenStream</abbr></a> $tokens)
+                    <p>Parses a token stream.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_CompilerInterface.html"><abbr title="Twig_CompilerInterface">Twig_CompilerInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getCompiler">getCompiler</a>()
+                    <p>Gets the Compiler instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setCompiler">setCompiler</a>(<a href="Twig_CompilerInterface.html"><abbr title="Twig_CompilerInterface">Twig_CompilerInterface</abbr></a> $compiler)
+                    <p>Sets the Compiler instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_compile">compile</a>(<a href="Twig_NodeInterface.html"><abbr title="Twig_NodeInterface">Twig_NodeInterface</abbr></a> $node)
+                    <p>Compiles a Node.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_compileSource">compileSource</a>(string $source, string $name = null)
+                    <p>Compiles a template source code.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setLoader">setLoader</a>(<a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a> $loader)
+                    <p>Sets the Loader instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getLoader">getLoader</a>()
+                    <p>Gets the Loader instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setCharset">setCharset</a>(string $charset)
+                    <p>Sets the default template charset.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getCharset">getCharset</a>()
+                    <p>Gets the default template charset.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_initRuntime">initRuntime</a>()
+                    <p>Initializes the runtime environment.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    Boolean
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_hasExtension">hasExtension</a>(string $name)
+                    <p>Returns true if the given extension is registered.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_ExtensionInterface.html"><abbr title="Twig_ExtensionInterface">Twig_ExtensionInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getExtension">getExtension</a>(string $name)
+                    <p>Gets an extension by name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addExtension">addExtension</a>(<a href="Twig_ExtensionInterface.html"><abbr title="Twig_ExtensionInterface">Twig_ExtensionInterface</abbr></a> $extension)
+                    <p>Registers an extension.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_removeExtension">removeExtension</a>(string $name)
+                    <p>Removes an extension by name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_setExtensions">setExtensions</a>(array $extensions)
+                    <p>Registers an array of extensions.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getExtensions">getExtensions</a>()
+                    <p>Returns all registered extensions.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addTokenParser">addTokenParser</a>(<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a> $parser)
+                    <p>Registers a Token Parser.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_TokenParserBrokerInterface.html"><abbr title="Twig_TokenParserBrokerInterface">Twig_TokenParserBrokerInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getTokenParsers">getTokenParsers</a>()
+                    <p>Gets the registered Token Parsers.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getTags">getTags</a>()
+                    <p>Gets registered tags.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addNodeVisitor">addNodeVisitor</a>(<a href="Twig_NodeVisitorInterface.html"><abbr title="Twig_NodeVisitorInterface">Twig_NodeVisitorInterface</abbr></a> $visitor)
+                    <p>Registers a Node Visitor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_NodeVisitorInterface.html"><abbr title="Twig_NodeVisitorInterface">Twig_NodeVisitorInterface</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getNodeVisitors">getNodeVisitors</a>()
+                    <p>Gets the registered Node Visitors.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addFilter">addFilter</a>(string|<a href="Twig_SimpleFilter.html"><abbr title="Twig_SimpleFilter">Twig_SimpleFilter</abbr></a> $name, <a href="Twig_FilterInterface.html"><abbr title="Twig_FilterInterface">Twig_FilterInterface</abbr></a>|<a href="Twig_SimpleFilter.html"><abbr title="Twig_SimpleFilter">Twig_SimpleFilter</abbr></a> $filter = null)
+                    <p>Registers a Filter.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_Filter.html"><abbr title="Twig_Filter">Twig_Filter</abbr></a>|<abbr title="false">false</abbr>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getFilter">getFilter</a>(string $name)
+                    <p>Get a filter by name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_registerUndefinedFilterCallback">registerUndefinedFilterCallback</a>($callable)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_FilterInterface.html"><abbr title="Twig_FilterInterface">Twig_FilterInterface</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getFilters">getFilters</a>()
+                    <p>Gets the registered Filters.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addTest">addTest</a>(string|<a href="Twig_SimpleTest.html"><abbr title="Twig_SimpleTest">Twig_SimpleTest</abbr></a> $name, <a href="Twig_TestInterface.html"><abbr title="Twig_TestInterface">Twig_TestInterface</abbr></a>|<a href="Twig_SimpleTest.html"><abbr title="Twig_SimpleTest">Twig_SimpleTest</abbr></a> $test = null)
+                    <p>Registers a Test.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_TestInterface.html"><abbr title="Twig_TestInterface">Twig_TestInterface</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getTests">getTests</a>()
+                    <p>Gets the registered Tests.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addFunction">addFunction</a>(string|<a href="Twig_SimpleFunction.html"><abbr title="Twig_SimpleFunction">Twig_SimpleFunction</abbr></a> $name, <a href="Twig_FunctionInterface.html"><abbr title="Twig_FunctionInterface">Twig_FunctionInterface</abbr></a>|<a href="Twig_SimpleFunction.html"><abbr title="Twig_SimpleFunction">Twig_SimpleFunction</abbr></a> $function = null)
+                    <p>Registers a Function.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_Function.html"><abbr title="Twig_Function">Twig_Function</abbr></a>|<abbr title="false">false</abbr>
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getFunction">getFunction</a>(string $name)
+                    <p>Get a function by name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_registerUndefinedFunctionCallback">registerUndefinedFunctionCallback</a>($callable)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="Twig_FunctionInterface.html"><abbr title="Twig_FunctionInterface">Twig_FunctionInterface</abbr></a>[]
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getFunctions">getFunctions</a>()
+                    <p>Gets registered functions.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_addGlobal">addGlobal</a>(string $name, mixed $value)
+                    <p>Registers a Global.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getGlobals">getGlobals</a>()
+                    <p>Gets the registered Globals.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_mergeGlobals">mergeGlobals</a>(array $context)
+                    <p>Merges a context with the defined globals.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getUnaryOperators">getUnaryOperators</a>()
+                    <p>Gets the registered unary Operators.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_getBinaryOperators">getBinaryOperators</a>()
+                    <p>Gets the registered binary Operators.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_Environment.html#method_computeAlternatives">computeAlternatives</a>($name, $items)
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 85</div>
+        <code>            public            
+    <strong>__construct</strong>(<a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a> $loader = null, array $options = array())</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p>Available options:<br />
+<br />
+  * debug: When set to true, it automatically set &quot;auto_reload&quot; to true as<br />
+           well (default to false).<br />
+<br />
+  * charset: The charset used by the templates (default to utf-8).<br />
+<br />
+  * base_template_class: The base template class to use for generated<br />
+                         templates (default to Twig_Template).<br />
+<br />
+  * cache: An absolute path where to store the compiled templates, or<br />
+           false to disable compilation cache (default).<br />
+<br />
+  * auto_reload: Whether to reload the template is the original source changed.<br />
+                 If you don&#039;t provide the auto_reload option, it will be<br />
+                 determined automatically base on the debug value.<br />
+<br />
+  * strict_variables: Whether to ignore invalid variables in templates<br />
+                      (default to false).<br />
+<br />
+  * autoescape: Whether to enable auto-escaping (default to html):<br />
+                  * false: disable auto-escaping<br />
+                  * true: equivalent to html<br />
+                  * html, js: set the autoescaping to one of the supported strategies<br />
+                  * PHP callback: a PHP callback that returns an escaping strategy based on the template &quot;filename&quot;<br />
+<br />
+  * optimizations: A flag that indicates which optimizations to apply<br />
+                   (default to -1 which means that all optimizations are enabled;<br />
+                   set it to 0 to disable).</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a></td>
+                <td>$loader</td>
+                <td>A Twig_LoaderInterface instance</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>An array of options</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBaseTemplateClass">
+        <div class="location">at line 124</div>
+        <code>            public            string
+    <strong>getBaseTemplateClass</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the base template class for compiled templates.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The base template class name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setBaseTemplateClass">
+        <div class="location">at line 134</div>
+        <code>            public            
+    <strong>setBaseTemplateClass</strong>(string $class)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the base template class for compiled templates.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>The base template class name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_enableDebug">
+        <div class="location">at line 142</div>
+        <code>            public            
+    <strong>enableDebug</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Enables debugging mode.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_disableDebug">
+        <div class="location">at line 150</div>
+        <code>            public            
+    <strong>disableDebug</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Disables debugging mode.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isDebug">
+        <div class="location">at line 160</div>
+        <code>            public            Boolean
+    <strong>isDebug</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Checks if debug mode is enabled.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Boolean</td>
+            <td>true if debug mode is enabled, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_enableAutoReload">
+        <div class="location">at line 168</div>
+        <code>            public            
+    <strong>enableAutoReload</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Enables the auto_reload option.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_disableAutoReload">
+        <div class="location">at line 176</div>
+        <code>            public            
+    <strong>disableAutoReload</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Disables the auto_reload option.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isAutoReload">
+        <div class="location">at line 186</div>
+        <code>            public            Boolean
+    <strong>isAutoReload</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Checks if the auto_reload option is enabled.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Boolean</td>
+            <td>true if auto_reload is enabled, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_enableStrictVariables">
+        <div class="location">at line 194</div>
+        <code>            public            
+    <strong>enableStrictVariables</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Enables the strict_variables option.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_disableStrictVariables">
+        <div class="location">at line 202</div>
+        <code>            public            
+    <strong>disableStrictVariables</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Disables the strict_variables option.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isStrictVariables">
+        <div class="location">at line 212</div>
+        <code>            public            Boolean
+    <strong>isStrictVariables</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Checks if the strict_variables option is enabled.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Boolean</td>
+            <td>true if strict_variables is enabled, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCache">
+        <div class="location">at line 222</div>
+        <code>            public            string|<abbr title="false">false</abbr>
+    <strong>getCache</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the cache directory or false if cache is disabled.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string|<abbr title="false">false</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCache">
+        <div class="location">at line 233</div>
+        <code>            public            
+    <strong>setCache</strong>(string|<abbr title="false">false</abbr> $cache)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the cache directory or false if cache is disabled.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|<abbr title="false">false</abbr></td>
+                <td>$cache</td>
+                <td>The absolute path to the compiled templates, or false to disable cache</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCacheFilename">
+        <div class="location">at line 245</div>
+        <code>            public            string
+    <strong>getCacheFilename</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Gets the cache filename for a given template.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The cache file name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTemplateClass">
+        <div class="location">at line 264</div>
+        <code>            public            string
+    <strong>getTemplateClass</strong>(string $name, integer $index = null)</code>
+    </h3>
+    <div class="details">
+        <p>Gets the template class associated with the given string.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name for which to calculate the template class name</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index if it is an embedded template</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The template class name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTemplateClassPrefix">
+        <div class="location">at line 274</div>
+        <code>            public            string
+    <strong>getTemplateClassPrefix</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the template class prefix.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The template class prefix</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">at line 287</div>
+        <code>            public            string
+    <strong>render</strong>(string $name, array $context = array())</code>
+    </h3>
+    <div class="details">
+        <p>Renders a template.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td>An array of parameters to pass to the template</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The rendered template</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_display">
+        <div class="location">at line 298</div>
+        <code>            public            
+    <strong>display</strong>(string $name, array $context = array())</code>
+    </h3>
+    <div class="details">
+        <p>Displays a template.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td>An array of parameters to pass to the template</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadTemplate">
+        <div class="location">at line 311</div>
+        <code>            public            <a href="Twig_TemplateInterface.html"><abbr title="Twig_TemplateInterface">Twig_TemplateInterface</abbr></a>
+    <strong>loadTemplate</strong>(string $name, integer $index = null)</code>
+    </h3>
+    <div class="details">
+        <p>Loads a template by name.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index if it is an embedded template</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_TemplateInterface.html"><abbr title="Twig_TemplateInterface">Twig_TemplateInterface</abbr></a></td>
+            <td>A template instance representing the given template name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isTemplateFresh">
+        <div class="location">at line 350</div>
+        <code>            public            Boolean
+    <strong>isTemplateFresh</strong>(string $name, <abbr title="timestamp">timestamp</abbr> $time)</code>
+    </h3>
+    <div class="details">
+        <p>Returns true if the template is still fresh.</p>
+        <p>Besides checking the loader for freshness information,<br />
+ this method also checks if the enabled extensions have<br />
+ not changed.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+                    <tr>
+                <td><abbr title="timestamp">timestamp</abbr></td>
+                <td>$time</td>
+                <td>The last modification time of the cached template</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Boolean</td>
+            <td>true if the template is fresh, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_resolveTemplate">
+        <div class="location">at line 362</div>
+        <code>            public            
+    <strong>resolveTemplate</strong>($names)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$names</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_clearTemplateCache">
+        <div class="location">at line 389</div>
+        <code>            public            
+    <strong>clearTemplateCache</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Clears the internal template cache.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_clearCacheFiles">
+        <div class="location">at line 397</div>
+        <code>            public            
+    <strong>clearCacheFiles</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Clears the template cache files on the filesystem.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getLexer">
+        <div class="location">at line 415</div>
+        <code>            public            <a href="Twig_LexerInterface.html"><abbr title="Twig_LexerInterface">Twig_LexerInterface</abbr></a>
+    <strong>getLexer</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the Lexer instance.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_LexerInterface.html"><abbr title="Twig_LexerInterface">Twig_LexerInterface</abbr></a></td>
+            <td>A Twig_LexerInterface instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setLexer">
+        <div class="location">at line 429</div>
+        <code>            public            
+    <strong>setLexer</strong>(<a href="Twig_LexerInterface.html"><abbr title="Twig_LexerInterface">Twig_LexerInterface</abbr></a> $lexer)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the Lexer instance.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_LexerInterface.html"><abbr title="Twig_LexerInterface">Twig_LexerInterface</abbr></a></td>
+                <td>$lexer</td>
+                <td>A Twig_LexerInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tokenize">
+        <div class="location">at line 442</div>
+        <code>            public            <a href="Twig_TokenStream.html"><abbr title="Twig_TokenStream">Twig_TokenStream</abbr></a>
+    <strong>tokenize</strong>(string $source, string $name = null)</code>
+    </h3>
+    <div class="details">
+        <p>Tokenizes a source code.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td>The template source code</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_TokenStream.html"><abbr title="Twig_TokenStream">Twig_TokenStream</abbr></a></td>
+            <td>A Twig_TokenStream instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getParser">
+        <div class="location">at line 452</div>
+        <code>            public            <a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a>
+    <strong>getParser</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the Parser instance.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a></td>
+            <td>A Twig_ParserInterface instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setParser">
+        <div class="location">at line 466</div>
+        <code>            public            
+    <strong>setParser</strong>(<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a> $parser)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the Parser instance.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a></td>
+                <td>$parser</td>
+                <td>A Twig_ParserInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_parse">
+        <div class="location">at line 478</div>
+        <code>            public            <a href="Twig_Node_Module.html"><abbr title="Twig_Node_Module">Twig_Node_Module</abbr></a>
+    <strong>parse</strong>(<a href="Twig_TokenStream.html"><abbr title="Twig_TokenStream">Twig_TokenStream</abbr></a> $tokens)</code>
+    </h3>
+    <div class="details">
+        <p>Parses a token stream.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_TokenStream.html"><abbr title="Twig_TokenStream">Twig_TokenStream</abbr></a></td>
+                <td>$tokens</td>
+                <td>A Twig_TokenStream instance</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_Node_Module.html"><abbr title="Twig_Node_Module">Twig_Node_Module</abbr></a></td>
+            <td>A Node tree</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCompiler">
+        <div class="location">at line 488</div>
+        <code>            public            <a href="Twig_CompilerInterface.html"><abbr title="Twig_CompilerInterface">Twig_CompilerInterface</abbr></a>
+    <strong>getCompiler</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the Compiler instance.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_CompilerInterface.html"><abbr title="Twig_CompilerInterface">Twig_CompilerInterface</abbr></a></td>
+            <td>A Twig_CompilerInterface instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCompiler">
+        <div class="location">at line 502</div>
+        <code>            public            
+    <strong>setCompiler</strong>(<a href="Twig_CompilerInterface.html"><abbr title="Twig_CompilerInterface">Twig_CompilerInterface</abbr></a> $compiler)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the Compiler instance.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_CompilerInterface.html"><abbr title="Twig_CompilerInterface">Twig_CompilerInterface</abbr></a></td>
+                <td>$compiler</td>
+                <td>A Twig_CompilerInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_compile">
+        <div class="location">at line 514</div>
+        <code>            public            string
+    <strong>compile</strong>(<a href="Twig_NodeInterface.html"><abbr title="Twig_NodeInterface">Twig_NodeInterface</abbr></a> $node)</code>
+    </h3>
+    <div class="details">
+        <p>Compiles a Node.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_NodeInterface.html"><abbr title="Twig_NodeInterface">Twig_NodeInterface</abbr></a></td>
+                <td>$node</td>
+                <td>A Twig_NodeInterface instance</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The compiled PHP source code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_compileSource">
+        <div class="location">at line 527</div>
+        <code>            public            string
+    <strong>compileSource</strong>(string $source, string $name = null)</code>
+    </h3>
+    <div class="details">
+        <p>Compiles a template source code.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td>The template source code</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The compiled PHP source code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setLoader">
+        <div class="location">at line 544</div>
+        <code>            public            
+    <strong>setLoader</strong>(<a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a> $loader)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the Loader instance.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a></td>
+                <td>$loader</td>
+                <td>A Twig_LoaderInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getLoader">
+        <div class="location">at line 554</div>
+        <code>            public            <a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a>
+    <strong>getLoader</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the Loader instance.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_LoaderInterface.html"><abbr title="Twig_LoaderInterface">Twig_LoaderInterface</abbr></a></td>
+            <td>A Twig_LoaderInterface instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCharset">
+        <div class="location">at line 564</div>
+        <code>            public            
+    <strong>setCharset</strong>(string $charset)</code>
+    </h3>
+    <div class="details">
+        <p>Sets the default template charset.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td>The default charset</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCharset">
+        <div class="location">at line 574</div>
+        <code>            public            string
+    <strong>getCharset</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the default template charset.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The default charset</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_initRuntime">
+        <div class="location">at line 582</div>
+        <code>            public            
+    <strong>initRuntime</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Initializes the runtime environment.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasExtension">
+        <div class="location">at line 598</div>
+        <code>            public            Boolean
+    <strong>hasExtension</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Returns true if the given extension is registered.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The extension name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>Boolean</td>
+            <td>Whether the extension is registered or not</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getExtension">
+        <div class="location">at line 610</div>
+        <code>            public            <a href="Twig_ExtensionInterface.html"><abbr title="Twig_ExtensionInterface">Twig_ExtensionInterface</abbr></a>
+    <strong>getExtension</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Gets an extension by name.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The extension name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_ExtensionInterface.html"><abbr title="Twig_ExtensionInterface">Twig_ExtensionInterface</abbr></a></td>
+            <td>A Twig_ExtensionInterface instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addExtension">
+        <div class="location">at line 624</div>
+        <code>            public            
+    <strong>addExtension</strong>(<a href="Twig_ExtensionInterface.html"><abbr title="Twig_ExtensionInterface">Twig_ExtensionInterface</abbr></a> $extension)</code>
+    </h3>
+    <div class="details">
+        <p>Registers an extension.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_ExtensionInterface.html"><abbr title="Twig_ExtensionInterface">Twig_ExtensionInterface</abbr></a></td>
+                <td>$extension</td>
+                <td>A Twig_ExtensionInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeExtension">
+        <div class="location">at line 642</div>
+        <code>            public            
+    <strong>removeExtension</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Removes an extension by name.</p>
+        <p>This method is deprecated and you should not use it.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The extension name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setExtensions">
+        <div class="location">at line 656</div>
+        <code>            public            
+    <strong>setExtensions</strong>(array $extensions)</code>
+    </h3>
+    <div class="details">
+        <p>Registers an array of extensions.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$extensions</td>
+                <td>An array of extensions</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getExtensions">
+        <div class="location">at line 668</div>
+        <code>            public            array
+    <strong>getExtensions</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns all registered extensions.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of extensions</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addTokenParser">
+        <div class="location">at line 678</div>
+        <code>            public            
+    <strong>addTokenParser</strong>(<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a> $parser)</code>
+    </h3>
+    <div class="details">
+        <p>Registers a Token Parser.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a></td>
+                <td>$parser</td>
+                <td>A Twig_TokenParserInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTokenParsers">
+        <div class="location">at line 692</div>
+        <code>            public            <a href="Twig_TokenParserBrokerInterface.html"><abbr title="Twig_TokenParserBrokerInterface">Twig_TokenParserBrokerInterface</abbr></a>
+    <strong>getTokenParsers</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered Token Parsers.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_TokenParserBrokerInterface.html"><abbr title="Twig_TokenParserBrokerInterface">Twig_TokenParserBrokerInterface</abbr></a></td>
+            <td>A broker containing token parsers</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTags">
+        <div class="location">at line 708</div>
+        <code>            public            <a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a>[]
+    <strong>getTags</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets registered tags.</p>
+        <p>Be warned that this method cannot return tags defined by Twig_TokenParserBrokerInterface classes.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a>[]</td>
+            <td>An array of Twig_TokenParserInterface instances</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addNodeVisitor">
+        <div class="location">at line 725</div>
+        <code>            public            
+    <strong>addNodeVisitor</strong>(<a href="Twig_NodeVisitorInterface.html"><abbr title="Twig_NodeVisitorInterface">Twig_NodeVisitorInterface</abbr></a> $visitor)</code>
+    </h3>
+    <div class="details">
+        <p>Registers a Node Visitor.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_NodeVisitorInterface.html"><abbr title="Twig_NodeVisitorInterface">Twig_NodeVisitorInterface</abbr></a></td>
+                <td>$visitor</td>
+                <td>A Twig_NodeVisitorInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNodeVisitors">
+        <div class="location">at line 739</div>
+        <code>            public            <a href="Twig_NodeVisitorInterface.html"><abbr title="Twig_NodeVisitorInterface">Twig_NodeVisitorInterface</abbr></a>[]
+    <strong>getNodeVisitors</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered Node Visitors.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_NodeVisitorInterface.html"><abbr title="Twig_NodeVisitorInterface">Twig_NodeVisitorInterface</abbr></a>[]</td>
+            <td>An array of Twig_NodeVisitorInterface instances</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addFilter">
+        <div class="location">at line 754</div>
+        <code>            public            
+    <strong>addFilter</strong>(string|<a href="Twig_SimpleFilter.html"><abbr title="Twig_SimpleFilter">Twig_SimpleFilter</abbr></a> $name, <a href="Twig_FilterInterface.html"><abbr title="Twig_FilterInterface">Twig_FilterInterface</abbr></a>|<a href="Twig_SimpleFilter.html"><abbr title="Twig_SimpleFilter">Twig_SimpleFilter</abbr></a> $filter = null)</code>
+    </h3>
+    <div class="details">
+        <p>Registers a Filter.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|<a href="Twig_SimpleFilter.html"><abbr title="Twig_SimpleFilter">Twig_SimpleFilter</abbr></a></td>
+                <td>$name</td>
+                <td>The filter name or a Twig_SimpleFilter instance</td>
+            </tr>
+                    <tr>
+                <td><a href="Twig_FilterInterface.html"><abbr title="Twig_FilterInterface">Twig_FilterInterface</abbr></a>|<a href="Twig_SimpleFilter.html"><abbr title="Twig_SimpleFilter">Twig_SimpleFilter</abbr></a></td>
+                <td>$filter</td>
+                <td>A Twig_FilterInterface instance or a Twig_SimpleFilter instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFilter">
+        <div class="location">at line 782</div>
+        <code>            public            <a href="Twig_Filter.html"><abbr title="Twig_Filter">Twig_Filter</abbr></a>|<abbr title="false">false</abbr>
+    <strong>getFilter</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Get a filter by name.</p>
+        <p>Subclasses may override this method and load filters differently;<br />
+ so no list of filters is available.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The filter name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_Filter.html"><abbr title="Twig_Filter">Twig_Filter</abbr></a>|<abbr title="false">false</abbr></td>
+            <td>A Twig_Filter instance or false if the filter does not exist</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_registerUndefinedFilterCallback">
+        <div class="location">at line 814</div>
+        <code>            public            
+    <strong>registerUndefinedFilterCallback</strong>($callable)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFilters">
+        <div class="location">at line 828</div>
+        <code>            public            <a href="Twig_FilterInterface.html"><abbr title="Twig_FilterInterface">Twig_FilterInterface</abbr></a>[]
+    <strong>getFilters</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered Filters.</p>
+        <p>Be warned that this method cannot return filters defined with registerUndefinedFunctionCallback.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_FilterInterface.html"><abbr title="Twig_FilterInterface">Twig_FilterInterface</abbr></a>[]</td>
+            <td>An array of Twig_FilterInterface instances</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>registerUndefinedFilterCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addTest">
+        <div class="location">at line 843</div>
+        <code>            public            
+    <strong>addTest</strong>(string|<a href="Twig_SimpleTest.html"><abbr title="Twig_SimpleTest">Twig_SimpleTest</abbr></a> $name, <a href="Twig_TestInterface.html"><abbr title="Twig_TestInterface">Twig_TestInterface</abbr></a>|<a href="Twig_SimpleTest.html"><abbr title="Twig_SimpleTest">Twig_SimpleTest</abbr></a> $test = null)</code>
+    </h3>
+    <div class="details">
+        <p>Registers a Test.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|<a href="Twig_SimpleTest.html"><abbr title="Twig_SimpleTest">Twig_SimpleTest</abbr></a></td>
+                <td>$name</td>
+                <td>The test name or a Twig_SimpleTest instance</td>
+            </tr>
+                    <tr>
+                <td><a href="Twig_TestInterface.html"><abbr title="Twig_TestInterface">Twig_TestInterface</abbr></a>|<a href="Twig_SimpleTest.html"><abbr title="Twig_SimpleTest">Twig_SimpleTest</abbr></a></td>
+                <td>$test</td>
+                <td>A Twig_TestInterface instance or a Twig_SimpleTest instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTests">
+        <div class="location">at line 866</div>
+        <code>            public            <a href="Twig_TestInterface.html"><abbr title="Twig_TestInterface">Twig_TestInterface</abbr></a>[]
+    <strong>getTests</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered Tests.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_TestInterface.html"><abbr title="Twig_TestInterface">Twig_TestInterface</abbr></a>[]</td>
+            <td>An array of Twig_TestInterface instances</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addFunction">
+        <div class="location">at line 881</div>
+        <code>            public            
+    <strong>addFunction</strong>(string|<a href="Twig_SimpleFunction.html"><abbr title="Twig_SimpleFunction">Twig_SimpleFunction</abbr></a> $name, <a href="Twig_FunctionInterface.html"><abbr title="Twig_FunctionInterface">Twig_FunctionInterface</abbr></a>|<a href="Twig_SimpleFunction.html"><abbr title="Twig_SimpleFunction">Twig_SimpleFunction</abbr></a> $function = null)</code>
+    </h3>
+    <div class="details">
+        <p>Registers a Function.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|<a href="Twig_SimpleFunction.html"><abbr title="Twig_SimpleFunction">Twig_SimpleFunction</abbr></a></td>
+                <td>$name</td>
+                <td>The function name or a Twig_SimpleFunction instance</td>
+            </tr>
+                    <tr>
+                <td><a href="Twig_FunctionInterface.html"><abbr title="Twig_FunctionInterface">Twig_FunctionInterface</abbr></a>|<a href="Twig_SimpleFunction.html"><abbr title="Twig_SimpleFunction">Twig_SimpleFunction</abbr></a></td>
+                <td>$function</td>
+                <td>A Twig_FunctionInterface instance or a Twig_SimpleFunction instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFunction">
+        <div class="location">at line 909</div>
+        <code>            public            <a href="Twig_Function.html"><abbr title="Twig_Function">Twig_Function</abbr></a>|<abbr title="false">false</abbr>
+    <strong>getFunction</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Get a function by name.</p>
+        <p>Subclasses may override this method and load functions differently;<br />
+ so no list of functions is available.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>function name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_Function.html"><abbr title="Twig_Function">Twig_Function</abbr></a>|<abbr title="false">false</abbr></td>
+            <td>A Twig_Function instance or false if the function does not exist</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_registerUndefinedFunctionCallback">
+        <div class="location">at line 941</div>
+        <code>            public            
+    <strong>registerUndefinedFunctionCallback</strong>($callable)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getFunctions">
+        <div class="location">at line 955</div>
+        <code>            public            <a href="Twig_FunctionInterface.html"><abbr title="Twig_FunctionInterface">Twig_FunctionInterface</abbr></a>[]
+    <strong>getFunctions</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets registered functions.</p>
+        <p>Be warned that this method cannot return functions defined with registerUndefinedFunctionCallback.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="Twig_FunctionInterface.html"><abbr title="Twig_FunctionInterface">Twig_FunctionInterface</abbr></a>[]</td>
+            <td>An array of Twig_FunctionInterface instances</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>registerUndefinedFunctionCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addGlobal">
+        <div class="location">at line 970</div>
+        <code>            public            
+    <strong>addGlobal</strong>(string $name, mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Registers a Global.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The global name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The global value</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getGlobals">
+        <div class="location">at line 984</div>
+        <code>            public            array
+    <strong>getGlobals</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered Globals.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of globals</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_mergeGlobals">
+        <div class="location">at line 1000</div>
+        <code>            public            array
+    <strong>mergeGlobals</strong>(array $context)</code>
+    </h3>
+    <div class="details">
+        <p>Merges a context with the defined globals.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td>An array representing the context</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>The context merged with the globals</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getUnaryOperators">
+        <div class="location">at line 1018</div>
+        <code>            public            array
+    <strong>getUnaryOperators</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered unary Operators.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of unary operators</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBinaryOperators">
+        <div class="location">at line 1032</div>
+        <code>            public            array
+    <strong>getBinaryOperators</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the registered binary Operators.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of binary operators</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_computeAlternatives">
+        <div class="location">at line 1041</div>
+        <code>            public            
+    <strong>computeAlternatives</strong>($name, $items)</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:referrer="http://a9.com/-/opensearch/extensions/referrer/">
+        <ShortName>Twig API (v1.11.1)</ShortName>
+        <Description>Searches Twig API (v1.11.1)</Description>
+        <Tags>Twig API</Tags>
+                <Url type="text/html" method="GET" template="http://twig.sensiolabs.org/api/v1.11.1//index.html?q={searchTerms}&amp;src={referrer:source?}"/>
+        <InputEncoding>UTF-8</InputEncoding>
+        <AdultContent>false</AdultContent>
+    </OpenSearchDescription>

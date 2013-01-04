@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="Author" content="Sensio Labs" />
+    <meta name="Language" content="en" />
+    <meta name="Copyright" content="Sensio" />
+    <meta name="Publisher" content="Sensio" />
+    <meta name="Description" content="Twig - The flexible, fast, and secure template engine for PHP" />
+    <meta name="Keywords" content="twig, templating, template, engine, template engine, template language, php" />
+
+    <title>Introduction - Documentation - Twig - The flexible, fast, and secure PHP template engine</title>
+
+    <link href="../css/reset-min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/colors.css" rel="stylesheet" type="text/css" />
+    <link href="../css/code.css" rel="stylesheet" type="text/css" />
+    <link href="../css/pygments.css" rel="stylesheet" type="text/css" />
+
+    
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/twig-project" />
+
+    <link href="http://connect.sensiolabs.com/css/sln.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript">
+        (function(w, d, s) {
+            function go() {
+                var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.src = url; js.id = id;
+                    fjs.parentNode.insertBefore(js, fjs);
+                };
+                load('https://connect.sensiolabs.com/sln.js?customize_url=/js/sln_customize.js', 'sln_bar');
+            }
+            if (w.addEventListener) { w.addEventListener("load", go, false); }
+            else if (w.attachEvent) { w.attachEvent("onload",go); }
+        } (window, document, 'script'));
+    </script>
+
+    <!--[if IE 6]>
+      <script type="text/javascript" src="/js/DD_belatedPNG_0.0.7a-min.js"></script>
+      <script type="text/javascript">
+        DD_belatedPNG.fix('.png_fix');
+      </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10931939-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="sln"></div>
+    <div class="hd">
+      <div class="illustration png_fix">
+        <div class="content">
+          <div class="sensio_product">
+            <img class="png_fix" src="../images/sensio-labs-product.png" alt="a Sensio Labs Product" />
+          </div>
+          <div class="clearfix">
+            <div class="logo_header"><a href="../index.html">TWIG</a></div>
+            <h1 class="title_header">
+              The flexible, fast, and secure<br />template engine for PHP
+            </h1>
+          </div>
+
+          <div class="menu">
+            <ul>
+              <li><a href="../index.html">ABOUT</a></li>
+              <li><a class="active" href="../documentation">DOCUMENTATION</a></li>
+              <li><a href="http://blog.twig.sensiolabs.org/">BLOG</a></li>
+              <li><a href="../development">DEVELOPMENT</a></li>
+              <li><a href="../contributors">CONTRIBUTORS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bd">
+      <div class="content">
+                        <div class="infobar clearfix">
+                    <div id="doc-toc" class="infobar-box">
+            <h3>Table of Contents</h3>
+            <ul>
+<li><a class="reference internal" href="intro.html#">Introduction</a><ul>
+<li><a class="reference internal" href="intro.html#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="intro.html#installation">Installation</a><ul>
+<li><a class="reference internal" href="intro.html#installing-from-the-tarball-release">Installing from the tarball release</a></li>
+<li><a class="reference internal" href="intro.html#installing-the-development-version">Installing the development version</a></li>
+<li><a class="reference internal" href="intro.html#installing-the-pear-package">Installing the PEAR package</a></li>
+<li><a class="reference internal" href="intro.html#installing-via-composer">Installing via Composer</a></li>
+<li><a class="reference internal" href="intro.html#installing-the-c-extension">Installing the C extension</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="intro.html#basic-api-usage">Basic API Usage</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        
+        <div class="infobar-box">
+            <h3>Questions &amp; Feedback</h3>
+            <div class="feedback">
+                <p>
+                  <strong>Found a typo or an error?</strong><br />
+                  Want to improve this document? <a href="https://github.com/fabpot/Twig/edit/master/doc/intro.rst">Edit</a> it.
+                </p>
+                <p>
+                  <strong>Need support or have a technical question?</strong><br />
+                  Post to the <a href="http://groups.google.com/group/twig-users">user mailing-list</a>.
+                 </p>
+            </div>
+
+            <h3>License</h3>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" src="http://symfony.com/images/license.png" /></a>
+                Twig <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/MovingImage" rel="dc:type">documentation</span> is licensed under a
+                Creative Commons Attribution-Share Alike 3.0
+                Unported <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">License</a>.
+            </div>
+        </div>
+    </div>
+
+    <div class="body-web">
+        <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="intro.html#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This is the documentation for Twig, the flexible, fast, and secure template
+engine for PHP.</p>
+<p>If you have any exposure to other text-based template languages, such as
+Smarty, Django, or Jinja, you should feel right at home with Twig. It's both
+designer and developer friendly by sticking to PHP's principles and adding
+functionality useful for templating environments.</p>
+<p>The key-features are...</p>
+<ul class="simple">
+<li><em>Fast</em>: Twig compiles templates down to plain optimized PHP code. The
+overhead compared to regular PHP code was reduced to the very minimum.</li>
+<li><em>Secure</em>: Twig has a sandbox mode to evaluate untrusted template code. This
+allows Twig to be used as a template language for applications where users
+may modify the template design.</li>
+<li><em>Flexible</em>: Twig is powered by a flexible lexer and parser. This allows the
+developer to define its own custom tags and filters, and create its own DSL.</li>
+</ul>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="intro.html#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Twig needs at least <strong>PHP 5.2.4</strong> to run.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="intro.html#installation" title="Permalink to this headline">¶</a></h2>
+<p>You have multiple ways to install Twig. If you are unsure what to do, go with
+the tarball.</p>
+<div class="section" id="installing-from-the-tarball-release">
+<h3>Installing from the tarball release<a class="headerlink" href="intro.html#installing-from-the-tarball-release" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download the most recent tarball from the <a class="reference external" href="https://github.com/fabpot/Twig/tags">download page</a></li>
+<li>Unpack the tarball</li>
+<li>Move the files somewhere in your project</li>
+</ol>
+</div>
+<div class="section" id="installing-the-development-version">
+<h3>Installing the development version<a class="headerlink" href="intro.html#installing-the-development-version" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Install Subversion or Git</li>
+<li>For Git: <tt class="docutils literal"><code>git clone git://github.com/fabpot/Twig.git</code></tt></li>
+<li>For Subversion: <tt class="docutils literal"><code>svn co http://svn.twig-project.org/trunk/ twig</code></tt></li>
+</ol>
+</div>
+<div class="section" id="installing-the-pear-package">
+<h3>Installing the PEAR package<a class="headerlink" href="intro.html#installing-the-pear-package" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Install PEAR</li>
+<li><tt class="docutils literal"><code>pear channel-discover pear.twig-project.org</code></tt></li>
+<li><tt class="docutils literal"><code>pear install twig/Twig</code></tt> (or <tt class="docutils literal"><code>pear install twig/Twig-beta</code></tt>)</li>
+</ol>
+</div>
+<div class="section" id="installing-via-composer">
+<h3>Installing via Composer<a class="headerlink" href="intro.html#installing-via-composer" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Install composer in your project:</li>
+</ol>
+<div class="literal-block"><div class="highlight-bash"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre>curl -s http://getcomposer.org/installer | php
+</pre></div>
+</td></tr></table></div></div>
+<ol class="arabic simple" start="2">
+<li>Create a <tt class="docutils literal"><code>composer.json</code></tt> file in your project root:</li>
+</ol>
+<div class="literal-block"><div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;require&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;twig/twig&quot;</span><span class="o">:</span> <span class="s2">&quot;1.*&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div></div>
+<ol class="arabic simple" start="3">
+<li>Install via composer</li>
+</ol>
+<div class="literal-block"><div class="highlight-bash"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre>php composer.phar install
+</pre></div>
+</td></tr></table></div></div>
+<div class="admonition-wrapper">
+<div class="note"></div><div class="admonition admonition-note"><p class="first admonition-title">Note</p>
+<p class="last">If you want to learn more about Composer, the <tt class="docutils literal"><code>composer.json</code></tt> file syntax
+and its usage, you can read the <a class="reference external" href="http://getcomposer.org/doc">online documentation</a>.</p>
+</div></div>
+</div>
+<div class="section" id="installing-the-c-extension">
+<h3>Installing the C extension<a class="headerlink" href="intro.html#installing-the-c-extension" title="Permalink to this headline">¶</a></h3>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.4: </span>The C extension was added in Twig 1.4.</p>
+<p>Twig comes with a C extension that enhances the performance of the Twig
+runtime engine. You can install it like any other PHP extension:</p>
+<div class="literal-block"><div class="highlight-bash"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>ext/twig
+<span class="nv">$ </span>phpize
+<span class="nv">$ </span>./configure
+<span class="nv">$ </span>make
+<span class="nv">$ </span>make install
+</pre></div>
+</td></tr></table></div></div>
+<p>Finally, enable the extension in your <tt class="docutils literal"><code>php.ini</code></tt> configuration file:</p>
+<div class="literal-block"><div class="highlight-ini"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="na">extension</span><span class="o">=</span><span class="s">twig.so</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>And from now on, Twig will automatically compile your templates to take
+advantage of the C extension. Note that this extension does not replace the
+PHP code but only provides an optimized version of the
+<tt class="docutils literal"><code>Twig_Template::getAttribute()</code></tt> method.</p>
+<div class="admonition-wrapper">
+<div class="tip"></div><div class="admonition admonition-tip"><p class="first admonition-title">Tip</p>
+<p class="last">On Windows, you can also simply download and install a <a class="reference external" href="https://github.com/stealth35/stealth35.github.com/downloads">pre-build DLL</a>.</p>
+</div></div>
+</div>
+</div>
+<div class="section" id="basic-api-usage">
+<h2>Basic API Usage<a class="headerlink" href="intro.html#basic-api-usage" title="Permalink to this headline">¶</a></h2>
+<p>This section gives you a brief introduction to the PHP API for Twig.</p>
+<p>The first step to use Twig is to register its autoloader:</p>
+<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">require_once</span> <span class="s1">&#39;/path/to/lib/Twig/Autoloader.php&#39;</span><span class="p">;</span>
+<span class="nx">Twig_Autoloader</span><span class="o">::</span><span class="na">register</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>Replace the <tt class="docutils literal"><code>/path/to/lib/</code></tt> path with the path you used for Twig
+installation.</p>
+<p>If you have installed Twig via Composer you can take advantage of Composer's
+autoload mechanism by replacing the previous snippet for:</p>
+<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">require_once</span> <span class="s1">&#39;/path/to/vendor/autoload.php&#39;</span>
+</pre></div>
+</td></tr></table></div></div>
+<div class="admonition-wrapper">
+<div class="note"></div><div class="admonition admonition-note"><p class="first admonition-title">Note</p>
+<p class="last">Twig follows the PEAR convention names for its classes, which means you
+can easily integrate Twig classes loading in your own autoloader.</p>
+</div></div>
+<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span class="nv">$loader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twig_Loader_String</span><span class="p">();</span>
+<span class="nv">$twig</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twig_Environment</span><span class="p">(</span><span class="nv">$loader</span><span class="p">);</span>
+
+<span class="k">echo</span> <span class="nv">$twig</span><span class="o">-&gt;</span><span class="na">render</span><span class="p">(</span><span class="s1">&#39;Hello {{ name }}!&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Fabien&#39;</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>Twig uses a loader (<tt class="docutils literal"><code>Twig_Loader_String</code></tt>) to locate templates, and an
+environment (<tt class="docutils literal"><code>Twig_Environment</code></tt>) to store the configuration.</p>
+<p>The <tt class="docutils literal"><code>render()</code></tt> method loads the template passed as a first argument and
+renders it with the variables passed as a second argument.</p>
+<p>As templates are generally stored on the filesystem, Twig also comes with a
+filesystem loader:</p>
+<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span class="nv">$loader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twig_Loader_Filesystem</span><span class="p">(</span><span class="s1">&#39;/path/to/templates&#39;</span><span class="p">);</span>
+<span class="nv">$twig</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twig_Environment</span><span class="p">(</span><span class="nv">$loader</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;cache&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;/path/to/compilation_cache&#39;</span><span class="p">,</span>
+<span class="p">));</span>
+
+<span class="k">echo</span> <span class="nv">$twig</span><span class="o">-&gt;</span><span class="na">render</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Fabien&#39;</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div></div>
+</div>
+</div>
+
+    </div>
+
+            <div class="navigation">
+                            <a accesskey="P" title="Twig" href="index.html">
+                    &laquo;&nbsp;Twig
+                </a>
+                        <span class="separator">|</span>                            <a accesskey="N" title="Twig for Template Designers" href="templates.html">
+                    Twig for Template Designers&nbsp;&raquo;
+                </a>
+                    </div>
+          </div>
+      <div class="ft">
+        <div class="content">
+          This website is powered by PHP and Twig. The Twig <a href="../images/twig-logo.png">logo</a> is &copy; 2010-2012 Sensio Labs
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

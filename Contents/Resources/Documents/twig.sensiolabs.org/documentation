@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="Author" content="Sensio Labs" />
+    <meta name="Language" content="en" />
+    <meta name="Copyright" content="Sensio" />
+    <meta name="Publisher" content="Sensio" />
+    <meta name="Description" content="Twig - The flexible, fast, and secure template engine for PHP" />
+    <meta name="Keywords" content="twig, templating, template, engine, template engine, template language, php" />
+
+    <title>Documentation - Twig - The flexible, fast, and secure PHP template engine</title>
+
+    <link href="css/reset-min.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/colors.css" rel="stylesheet" type="text/css" />
+    <link href="css/code.css" rel="stylesheet" type="text/css" />
+    <link href="css/pygments.css" rel="stylesheet" type="text/css" />
+
+    
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/twig-project" />
+
+    <link href="http://connect.sensiolabs.com/css/sln.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript">
+        (function(w, d, s) {
+            function go() {
+                var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.src = url; js.id = id;
+                    fjs.parentNode.insertBefore(js, fjs);
+                };
+                load('https://connect.sensiolabs.com/sln.js?customize_url=/js/sln_customize.js', 'sln_bar');
+            }
+            if (w.addEventListener) { w.addEventListener("load", go, false); }
+            else if (w.attachEvent) { w.attachEvent("onload",go); }
+        } (window, document, 'script'));
+    </script>
+
+    <!--[if IE 6]>
+      <script type="text/javascript" src="/js/DD_belatedPNG_0.0.7a-min.js"></script>
+      <script type="text/javascript">
+        DD_belatedPNG.fix('.png_fix');
+      </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10931939-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="sln"></div>
+    <div class="hd">
+      <div class="illustration png_fix">
+        <div class="content">
+          <div class="sensio_product">
+            <img class="png_fix" src="images/sensio-labs-product.png" alt="a Sensio Labs Product" />
+          </div>
+          <div class="clearfix">
+            <div class="logo_header"><a href="index.html">TWIG</a></div>
+            <h1 class="title_header">
+              The flexible, fast, and secure<br />template engine for PHP
+            </h1>
+          </div>
+
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">ABOUT</a></li>
+              <li><a class="active" href="documentation">DOCUMENTATION</a></li>
+              <li><a href="http://blog.twig.sensiolabs.org/">BLOG</a></li>
+              <li><a href="development">DEVELOPMENT</a></li>
+              <li><a href="contributors">CONTRIBUTORS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bd">
+      <div class="content">
+                    <h1>Twig Documentation</h1>
+
+    <p>Read the online documentation to learn more about Twig.</p>
+
+    <div class="offline-docs">
+
+        You can download the documentation for offline reading:
+
+        <ul>
+            <li><a id="book-pdf" href="http://twig.sensiolabs.org/pdf/Twig.pdf"><img src="images/pdficon.png" alt="PDF" /></a></li>
+            <li><a id="book-epub" href="http://twig.sensiolabs.org/epub/Twig.epub"><img src="images/epubicon.png" alt="EPUB" /></a></li>
+        </ul>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#book-pdf").click(function () {
+                    _gaq.push(['_trackEvent', 'Downloads', 'PDF', 'book']);
+                });
+                $("#book-epub").click(function () {
+                    _gaq.push(['_trackEvent', 'Downloads', 'EPUB', 'book']);
+                });
+            });
+        </script>
+    </div>
+
+    <ul class="pages">
+        <li><a href="doc/intro.html">Introduction / Installation</a></li>
+        <li><a href="doc/templates.html">Twig for Template Designers</a></li>
+        <li><a href="doc/api.html">Twig for Developers</a></li>
+        <li><a href="doc/advanced.html">Extending Twig</a></li>
+        <li><a href="doc/internals.html">Twig Internals</a></li>
+        <li><a href="doc/recipes.html">Twig Recipes</a></li>
+        <li><a href="doc/coding_standards.html">Coding Standards</a></li>
+        <li><a href="api/master/index.html">API</a></li>
+        <li><a href="doc/extensions/index.html">Twig contributed extensions documentation</a></li>
+        <li><a href="license">License</a></li>
+    </ul>
+
+    <div class="clearfix"></div>
+
+    <h1>Twig Reference</h1>
+
+    <p>
+        Browse the online reference to learn more about built-in features.
+    </p>
+
+    <div class="admonition-wrapper">
+        <div class="tip"></div>
+        <div class="admonition admonition-tip">
+            <p class="first admonition-title">Tip</p>
+            <p class="last">
+
+                Use the website short URLs to quickly lookup for any built-in
+                tag, filter, function, or test: write a URL like
+                <code>http://twig.sensiolabs.org/XXX</code> where
+                <code>XXX</code> is what you are looking for, and you will be
+                redirected to the most relevant page. These shortcuts also
+                makes easy to type in a link in a mailing-list post, an IRC
+                conversation, or a blog post.
+
+            </p>
+        </div>
+    </div>
+
+            <div class="builtin-reference">
+            <h2>Tags</h2>
+            <ul>
+                                    <li><a href="doc/tags/autoescape.html">autoescape</a></li>
+                                    <li><a href="doc/tags/block.html">block</a></li>
+                                    <li><a href="doc/tags/do.html">do</a></li>
+                                    <li><a href="doc/tags/embed.html">embed</a></li>
+                                    <li><a href="doc/tags/extends.html">extends</a></li>
+                                    <li><a href="doc/tags/filter.html">filter</a></li>
+                                    <li><a href="doc/tags/flush.html">flush</a></li>
+                                    <li><a href="doc/tags/for.html">for</a></li>
+                                    <li><a href="doc/tags/from.html">from</a></li>
+                                    <li><a href="doc/tags/if.html">if</a></li>
+                                    <li><a href="doc/tags/import.html">import</a></li>
+                                    <li><a href="doc/tags/include.html">include</a></li>
+                                    <li><a href="doc/tags/macro.html">macro</a></li>
+                                    <li><a href="doc/tags/raw.html">raw</a></li>
+                                    <li><a href="doc/tags/sandbox.html">sandbox</a></li>
+                                    <li><a href="doc/tags/set.html">set</a></li>
+                                    <li><a href="doc/tags/spaceless.html">spaceless</a></li>
+                                    <li><a href="doc/tags/use.html">use</a></li>
+                            </ul>
+        </div>
+            <div class="builtin-reference">
+            <h2>Filters</h2>
+            <ul>
+                                    <li><a href="doc/filters/abs.html">abs</a></li>
+                                    <li><a href="doc/filters/capitalize.html">capitalize</a></li>
+                                    <li><a href="doc/filters/convert_encoding.html">convert_encoding</a></li>
+                                    <li><a href="doc/filters/date.html">date</a></li>
+                                    <li><a href="doc/filters/date_modify.html">date_modify</a></li>
+                                    <li><a href="doc/filters/default.html">default</a></li>
+                                    <li><a href="doc/filters/escape.html">escape</a></li>
+                                    <li><a href="doc/filters/format.html">format</a></li>
+                                    <li><a href="doc/filters/join.html">join</a></li>
+                                    <li><a href="doc/filters/json_encode.html">json_encode</a></li>
+                                    <li><a href="doc/filters/keys.html">keys</a></li>
+                                    <li><a href="doc/filters/length.html">length</a></li>
+                                    <li><a href="doc/filters/lower.html">lower</a></li>
+                                    <li><a href="doc/filters/merge.html">merge</a></li>
+                                    <li><a href="doc/filters/nl2br.html">nl2br</a></li>
+                                    <li><a href="doc/filters/number_format.html">number_format</a></li>
+                                    <li><a href="doc/filters/raw.html">raw</a></li>
+                                    <li><a href="doc/filters/replace.html">replace</a></li>
+                                    <li><a href="doc/filters/reverse.html">reverse</a></li>
+                                    <li><a href="doc/filters/slice.html">slice</a></li>
+                                    <li><a href="doc/filters/sort.html">sort</a></li>
+                                    <li><a href="doc/filters/split.html">split</a></li>
+                                    <li><a href="doc/filters/striptags.html">striptags</a></li>
+                                    <li><a href="doc/filters/title.html">title</a></li>
+                                    <li><a href="doc/filters/trim.html">trim</a></li>
+                                    <li><a href="doc/filters/upper.html">upper</a></li>
+                                    <li><a href="doc/filters/url_encode.html">url_encode</a></li>
+                            </ul>
+        </div>
+            <div class="builtin-reference">
+            <h2>Functions</h2>
+            <ul>
+                                    <li><a href="doc/functions/attribute.html">attribute</a></li>
+                                    <li><a href="doc/functions/block.html">block</a></li>
+                                    <li><a href="doc/functions/constant.html">constant</a></li>
+                                    <li><a href="doc/functions/cycle.html">cycle</a></li>
+                                    <li><a href="doc/functions/date.html">date</a></li>
+                                    <li><a href="dump">dump</a></li>
+                                    <li><a href="doc/functions/parent.html">parent</a></li>
+                                    <li><a href="doc/functions/random.html">random</a></li>
+                                    <li><a href="doc/functions/range.html">range</a></li>
+                                    <li><a href="doc/functions/template_from_string.html">template_from_string</a></li>
+                            </ul>
+        </div>
+            <div class="builtin-reference">
+            <h2>Tests</h2>
+            <ul>
+                                    <li><a href="doc/tests/constant.html">constant</a></li>
+                                    <li><a href="doc/tests/defined.html">defined</a></li>
+                                    <li><a href="doc/tests/divisibleby.html">divisibleby</a></li>
+                                    <li><a href="doc/tests/empty.html">empty</a></li>
+                                    <li><a href="doc/tests/even.html">even</a></li>
+                                    <li><a href="doc/tests/iterable.html">iterable</a></li>
+                                    <li><a href="doc/tests/null.html">null</a></li>
+                                    <li><a href="doc/tests/odd.html">odd</a></li>
+                                    <li><a href="doc/tests/sameas.html">sameas</a></li>
+                            </ul>
+        </div>
+        <div class="builtin-reference">
+        <h2>Operators</h2>
+        <ul>
+            <li><a href="doc/templates.html#containment-operator">in</a></li>
+            <li><a href="doc/templates.html#test-operator">is</a></li>
+            <li><a href="doc/templates.html#math">Math</a> (+, -, /, %, /, *, **)</li>
+            <li><a href="doc/templates.html#math">Logic</a> (and, or, not, (), b-and, b-xor, b-or)</li>
+            <li><a href="doc/templates.html#comparisons">Comparisons</a> (==, !=, <, >, >=, <=, <a href="doc/tests/sameas.html">===</a>)</li>
+            <li><a href="doc/templates.html#other-operators">Others</a> (.., |, ~, ., [], ?:)</li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+      </div>
+      <div class="ft">
+        <div class="content">
+          This website is powered by PHP and Twig. The Twig <a href="images/twig-logo.png">logo</a> is &copy; 2010-2012 Sensio Labs
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

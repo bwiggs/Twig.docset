@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Twig_TokenParserBroker | Twig API</title>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                        <link rel="search" type="application/opensearchdescription+xml" href="../v1.0.0/opensearch.xml" title="Twig API (v1.0.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.1.0/opensearch.xml" title="Twig API (v1.1.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.1.1/opensearch.xml" title="Twig API (v1.1.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.1.2/opensearch.xml" title="Twig API (v1.1.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.2.0/opensearch.xml" title="Twig API (v1.2.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.3.0/opensearch.xml" title="Twig API (v1.3.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.4.0/opensearch.xml" title="Twig API (v1.4.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.5.0/opensearch.xml" title="Twig API (v1.5.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.5.1/opensearch.xml" title="Twig API (v1.5.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.0/opensearch.xml" title="Twig API (v1.6.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.1/opensearch.xml" title="Twig API (v1.6.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.2/opensearch.xml" title="Twig API (v1.6.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.3/opensearch.xml" title="Twig API (v1.6.3)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.4/opensearch.xml" title="Twig API (v1.6.4)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.6.5/opensearch.xml" title="Twig API (v1.6.5)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.7.0/opensearch.xml" title="Twig API (v1.7.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.0/opensearch.xml" title="Twig API (v1.8.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.1/opensearch.xml" title="Twig API (v1.8.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.2/opensearch.xml" title="Twig API (v1.8.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.8.3/opensearch.xml" title="Twig API (v1.8.3)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.9.0/opensearch.xml" title="Twig API (v1.9.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.9.1/opensearch.xml" title="Twig API (v1.9.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.9.2/opensearch.xml" title="Twig API (v1.9.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.0/opensearch.xml" title="Twig API (v1.10.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.1/opensearch.xml" title="Twig API (v1.10.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.2/opensearch.xml" title="Twig API (v1.10.2)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.10.3/opensearch.xml" title="Twig API (v1.10.3)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.11.0/opensearch.xml" title="Twig API (v1.11.0)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="../v1.11.1/opensearch.xml" title="Twig API (v1.11.1)" />
+            <link rel="search" type="application/opensearchdescription+xml" href="opensearch.xml" title="Twig API (master)" />
+                </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="classes.html">Classes</a></li>
+                        <li><a href="interfaces.html">Interfaces</a></li>
+            <li><a href="doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Twig API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="http://twig.sensiolabs.org/api/master/.html"></a>Twig_TokenParserBroker</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Twig_TokenParserBroker</strong>        implements
+        <a href="Twig_TokenParserBrokerInterface.html"><abbr title="Twig_TokenParserBrokerInterface">Twig_TokenParserBrokerInterface</abbr></a></p>
+
+            <div class="description">
+            <p>Default implementation of a token parser broker.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method___construct">__construct</a>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a> $parsers = array(), array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a> $brokers = array())
+                    <p>Constructor.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_addTokenParser">addTokenParser</a>(<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a> $parser)
+                    <p>Adds a TokenParser.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_removeTokenParser">removeTokenParser</a>(<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a> $parser)
+                    <p>Removes a TokenParser.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_addTokenParserBroker">addTokenParserBroker</a>(<a href="Twig_TokenParserBroker.html"><abbr title="Twig_TokenParserBroker">Twig_TokenParserBroker</abbr></a> $broker)
+                    <p>Adds a TokenParserBroker.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_removeTokenParserBroker">removeTokenParserBroker</a>(<a href="Twig_TokenParserBroker.html"><abbr title="Twig_TokenParserBroker">Twig_TokenParserBroker</abbr></a> $broker)
+                    <p>Removes a TokenParserBroker.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    null|<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_getTokenParser">getTokenParser</a>(string $tag)
+                    <p>Gets a suitable TokenParser for a tag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_getParsers">getParsers</a>()
+                    <p></p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    null|<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_getParser">getParser</a>()
+                    <p>Gets the Twig_ParserInterface.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="Twig_TokenParserBroker.html#method_setParser">setParser</a>(<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a> $parser)
+                    <p>Calls Twig_TokenParserInterface::setParser on all parsers the implementation knows of.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 32</div>
+        <code>            public            
+    <strong>__construct</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a> $parsers = array(), array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a> $brokers = array())</code>
+    </h3>
+    <div class="details">
+        <p>Constructor.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a></td>
+                <td>$parsers</td>
+                <td>A Traversable of Twig_TokenParserInterface instances</td>
+            </tr>
+                    <tr>
+                <td>array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a></td>
+                <td>$brokers</td>
+                <td>A Traversable of Twig_TokenParserBrokerInterface instances</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addTokenParser">
+        <div class="location">at line 53</div>
+        <code>            public            
+    <strong>addTokenParser</strong>(<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a> $parser)</code>
+    </h3>
+    <div class="details">
+        <p>Adds a TokenParser.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a></td>
+                <td>$parser</td>
+                <td>A Twig_TokenParserInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeTokenParser">
+        <div class="location">at line 63</div>
+        <code>            public            
+    <strong>removeTokenParser</strong>(<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a> $parser)</code>
+    </h3>
+    <div class="details">
+        <p>Removes a TokenParser.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a></td>
+                <td>$parser</td>
+                <td>A Twig_TokenParserInterface instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addTokenParserBroker">
+        <div class="location">at line 76</div>
+        <code>            public            
+    <strong>addTokenParserBroker</strong>(<a href="Twig_TokenParserBroker.html"><abbr title="Twig_TokenParserBroker">Twig_TokenParserBroker</abbr></a> $broker)</code>
+    </h3>
+    <div class="details">
+        <p>Adds a TokenParserBroker.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_TokenParserBroker.html"><abbr title="Twig_TokenParserBroker">Twig_TokenParserBroker</abbr></a></td>
+                <td>$broker</td>
+                <td>A Twig_TokenParserBroker instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeTokenParserBroker">
+        <div class="location">at line 86</div>
+        <code>            public            
+    <strong>removeTokenParserBroker</strong>(<a href="Twig_TokenParserBroker.html"><abbr title="Twig_TokenParserBroker">Twig_TokenParserBroker</abbr></a> $broker)</code>
+    </h3>
+    <div class="details">
+        <p>Removes a TokenParserBroker.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_TokenParserBroker.html"><abbr title="Twig_TokenParserBroker">Twig_TokenParserBroker</abbr></a></td>
+                <td>$broker</td>
+                <td>A Twig_TokenParserBroker instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getTokenParser">
+        <div class="location">at line 102</div>
+        <code>            public            null|<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a>
+    <strong>getTokenParser</strong>(string $tag)</code>
+    </h3>
+    <div class="details">
+        <p>Gets a suitable TokenParser for a tag.</p>
+        <p>First looks in parsers, then in brokers.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$tag</td>
+                <td>A tag name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>null|<a href="Twig_TokenParserInterface.html"><abbr title="Twig_TokenParserInterface">Twig_TokenParserInterface</abbr></a></td>
+            <td>A Twig_TokenParserInterface or null if no suitable TokenParser was found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getParsers">
+        <div class="location">at line 119</div>
+        <code>            public            
+    <strong>getParsers</strong>()</code>
+    </h3>
+    <div class="details">
+        <p></p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getParser">
+        <div class="location">at line 124</div>
+        <code>            public            null|<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a>
+    <strong>getParser</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the Twig_ParserInterface.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>null|<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a></td>
+            <td>A Twig_ParserInterface instance or null</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setParser">
+        <div class="location">at line 129</div>
+        <code>            public            
+    <strong>setParser</strong>(<a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a> $parser)</code>
+    </h3>
+    <div class="details">
+        <p>Calls Twig_TokenParserInterface::setParser on all parsers the implementation knows of.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="Twig_ParserInterface.html"><abbr title="Twig_ParserInterface">Twig_ParserInterface</abbr></a></td>
+                <td>$parser</td>
+                <td>A Twig_ParserInterface interface</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

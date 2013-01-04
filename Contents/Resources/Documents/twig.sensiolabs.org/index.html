@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="Author" content="Sensio Labs" />
+    <meta name="Language" content="en" />
+    <meta name="Copyright" content="Sensio" />
+    <meta name="Publisher" content="Sensio" />
+    <meta name="Description" content="Twig - The flexible, fast, and secure template engine for PHP" />
+    <meta name="Keywords" content="twig, templating, template, engine, template engine, template language, php" />
+
+    <title>Homepage - Twig - The flexible, fast, and secure PHP template engine</title>
+
+    <link href="css/reset-min.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/colors.css" rel="stylesheet" type="text/css" />
+    <link href="css/code.css" rel="stylesheet" type="text/css" />
+    <link href="css/pygments.css" rel="stylesheet" type="text/css" />
+
+    
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/twig-project" />
+
+    <link href="http://connect.sensiolabs.com/css/sln.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript">
+        (function(w, d, s) {
+            function go() {
+                var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.src = url; js.id = id;
+                    fjs.parentNode.insertBefore(js, fjs);
+                };
+                load('https://connect.sensiolabs.com/sln.js?customize_url=/js/sln_customize.js', 'sln_bar');
+            }
+            if (w.addEventListener) { w.addEventListener("load", go, false); }
+            else if (w.attachEvent) { w.attachEvent("onload",go); }
+        } (window, document, 'script'));
+    </script>
+
+    <!--[if IE 6]>
+      <script type="text/javascript" src="/js/DD_belatedPNG_0.0.7a-min.js"></script>
+      <script type="text/javascript">
+        DD_belatedPNG.fix('.png_fix');
+      </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10931939-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="sln"></div>
+    <div class="hd">
+      <div class="illustration png_fix">
+        <div class="content">
+          <div class="sensio_product">
+            <img class="png_fix" src="images/sensio-labs-product.png" alt="a Sensio Labs Product" />
+          </div>
+          <div class="clearfix">
+            <div class="logo_header"><a href="index.html">TWIG</a></div>
+            <h1 class="title_header">
+              The flexible, fast, and secure<br />template engine for PHP
+            </h1>
+          </div>
+
+          <div class="menu">
+            <ul>
+              <li><a class="active" href="index.html">ABOUT</a></li>
+              <li><a href="documentation">DOCUMENTATION</a></li>
+              <li><a href="http://blog.twig.sensiolabs.org/">BLOG</a></li>
+              <li><a href="development">DEVELOPMENT</a></li>
+              <li><a href="contributors">CONTRIBUTORS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bd">
+      <div class="content">
+                <div class="clearfix">
+  <div class="intro">
+    <h2>Twig is a modern template engine for PHP</h2>
+
+    <ul>
+      <li>
+          <strong>Fast</strong>: Twig <em>compiles</em> templates down to plain optimized PHP code.
+          The overhead compared to regular PHP code was reduced to the very minimum.
+      </li>
+      <li>
+        <strong>Secure</strong>: Twig has a <em>sandbox</em> mode to evaluate untrusted template code.
+        This allows Twig to be used as a template language for applications where
+        users may modify the template design.
+      </li>
+      <li>
+        <strong>Flexible</strong>: Twig is powered by a flexible <em>lexer</em> and <em>parser</em>.
+        This allows the developer to define its own custom tags and filters, and create its own DSL.
+      </li>
+    </ul>
+  </div>
+  <div class="links_intro">
+    <ul>
+     <li><a href="documentation"><img class="learn_more png_fix" src="images/learn_more.png" alt="Learn more" /></a></li>
+     <li>
+       <a href="doc/intro.html#installation"><img class="install_now png_fix" src="images/install_now.png" alt="Install now" /></a>
+       <div class="latest">
+          Stable: <a href="http://pear.twig-project.org/get/Twig-1.11.1.tgz">1.11.1</a>
+  </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="clearfix">
+  <div class="intro_more">
+    <h2>Why yet another template engine?</h2>
+
+    <p>
+      When it comes to template engines in PHP, many people will tell you that
+      PHP itself is a template engine. But even if PHP started its life as a
+      template language, it did not evolve like one in the recent years. As a
+      matter of fact, it doesn't support many features modern template
+      engines should have nowadays:
+    </p>
+
+    <ul>
+      <li>
+        <p><strong>Concise</strong>: The PHP language is verbose and becomes ridiculously verbose
+        when it comes to output escaping:</p>
+
+
+<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$var</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$var</span><span class="p">,</span> <span class="nx">ENT_QUOTES</span><span class="p">,</span> <span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span> <span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</div>
+
+
+        <p>In comparison, Twig has a very concise syntax, which make templates more readable:</p>
+
+
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{{</span> <span class="nv">var</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="nv">var</span><span class="o">|</span><span class="nf">escape</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="nv">var</span><span class="o">|</span><span class="nf">e</span> <span class="cp">}}</span><span class="x">         </span><span class="c">{# shortcut to escape a variable #}</span><span class="x"></span>
+</pre></div>
+</div>
+
+
+      </li>
+      <li>
+        <p><strong>Template oriented syntax</strong>: Twig has shortcuts for common patterns, like having
+        a default text displayed when you iterate over an empty array:</p>
+
+
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">for</span> <span class="nv">user</span> <span class="k">in</span> <span class="nv">users</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    * </span><span class="cp">{{</span> <span class="nv">user.name</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    No user have been found.</span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+
+
+      </li>
+      <li>
+        <p><strong>Full Featured</strong>: Twig supports everything you need to build powerful templates
+        with ease: multiple inheritance, blocks, automatic output-escaping, and much more:</p>
+
+
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;layout.html&quot;</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    Content of the page...</span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+
+
+      </li>
+      <li>
+        <p><strong>Easy to learn</strong>: The syntax is easy to learn and has been optimized to
+        allow web designers to get their job done fast without getting in their way.</p>
+      </li>
+    </ul>
+
+    <p>
+      Of course, PHP is also the language for which you can find the more
+      template engine projects. But most of them are still developed with PHP4 in mind, and
+      do not embrace web development best practices:
+    </p>
+
+    <ul>
+      <li>
+        <p><strong>Extensibility</strong>: Twig is flexible enough for all your needs, even the most
+        complex ones. Thanks to an open architecture, you can implement your own language constructs (tags, filters, functions, and even operators)
+        to create your very own DSL.</p>
+      </li>
+      <li>
+        <p><strong>Unit tested</strong>: Twig is fully unit-tested. The library is
+        stable and ready to be used in large projects.</p>
+      </li>
+      <li>
+        <p><strong>Documented</strong>: Twig is fully documented, with a dedicated online
+        book, and of course a full API documentation.</p>
+      </li>
+      <li>
+        <p><strong>Secure</strong>: When it comes to security, Twig has some unique features:</p>
+
+        <ul>
+          <li><p><em>Automatic output escaping</em>: To be on the safe side, you can enable
+            automatic output escaping globally or for a block of code:</p>
+
+
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">autoescape</span> <span class="nv">true</span> <span class="cp">%}</span><span class="x"></span>
+    <span class="cp">{%</span> <span class="k">var</span> <span class="cp">%}</span><span class="x"></span>
+    <span class="cp">{%</span> <span class="k">var</span><span class="o">|</span><span class="nf">raw</span> <span class="cp">%}</span><span class="x">     </span><span class="c">{# var won&#39;t be escaped #}</span><span class="x"></span>
+    <span class="cp">{%</span> <span class="k">var</span><span class="o">|</span><span class="nf">escape</span> <span class="cp">%}</span><span class="x">  </span><span class="c">{# var won&#39;t be doubled-escaped #}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endautoescape</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+
+
+          </li>
+          <li><p><em>Sandboxing</em>: Twig can evaluate any template in a sandbox environment
+            where the user has access to a limited set of tags, filters, and object methods defined
+            by the developer. Sandboxing can
+            be enabled globally or locally for just some templates:</p>
+
+
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">include</span> <span class="s2">&quot;user.html&quot;</span> <span class="k">sandboxed</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+
+
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Clean Error Messages</strong>: Whenever you have a syntax problem within a template,
+        Twig outputs a helpful message with the filename and the line number where the problem occurred.
+        It eases the debugging a lot.</p>
+      </li>
+      <li>
+        <p><strong>Fast</strong>: One of the goals of Twig is to be as fast as possible.
+        To achieve the best speed possible, Twig compiles templates down to plain optimized PHP code.
+        The overhead compared to regular PHP code was reduced to the very minimum.</p>
+      </li>
+    </ul>
+
+    <h2>Who is behind Twig?</h2>
+
+    <p>
+
+      Twig is brought to you by <a href="http://fabien.potencier.org/">Fabien
+      Potencier</a>, the creator of the <a
+      href="http://symfony.com/">Symfony framework</a>. Twig is
+      released under the new BSD license.
+
+    </p>
+  </div>
+</div>
+      </div>
+      <div class="ft">
+        <div class="content">
+          This website is powered by PHP and Twig. The Twig <a href="images/twig-logo.png">logo</a> is &copy; 2010-2012 Sensio Labs
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Twig.docset for Dash
 
-Twig templating docset to be used with Dash.
+Twig templating docset to be used with [Dash](http://kapeli.com/).
 
 # Installation
 

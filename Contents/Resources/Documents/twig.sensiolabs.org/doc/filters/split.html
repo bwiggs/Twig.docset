@@ -92,6 +92,16 @@
                                                                     <a href="index.html" accesskey="U">Filters</a> &raquo;
                             <tt class="docutils literal docutils literal docutils literal"><code>split</code></tt>
                 <div class="infobar clearfix">
+                    <div id="doc-toc" class="infobar-box">
+            <h3>Table of Contents</h3>
+            <ul>
+<li><a class="reference internal" href="split.html#"><tt class="docutils literal"><code>split</code></tt></a><ul>
+<li><a class="reference internal" href="split.html#arguments">Arguments</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
         
         <div class="infobar-box">
             <h3>Questions &amp; Feedback</h3>
@@ -140,7 +150,7 @@ returned;</li>
 </div></blockquote>
 <div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{{</span> <span class="s2">&quot;one,two,three,four,five&quot;</span><span class="o">|</span><span class="nf">split</span><span class="o">(</span><span class="s1">&#39;,&#39;</span><span class="o">,</span> <span class="m">3</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
-<span class="c">{# returns [one, two, &quot;three,four,five&quot;] #}</span><span class="x"></span>
+<span class="c">{# returns [&#39;one&#39;, &#39;two&#39;, &#39;three,four,five&#39;] #}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
 <p>If the <tt class="docutils literal"><code>delimiter</code></tt> is an empty string, then value will be split by equal
@@ -150,10 +160,10 @@ chunks. Length is set by the <tt class="docutils literal"><code>limit</code></tt
 3
 4
 5</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{{</span> <span class="s2">&quot;123&quot;</span><span class="o">|</span><span class="nf">split</span><span class="o">(</span><span class="s1">&#39;&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
-<span class="c">{# returns [1, 2, 3] #}</span><span class="x"></span>
+<span class="c">{# returns [&#39;1&#39;, &#39;2&#39;, &#39;3&#39;] #}</span><span class="x"></span>
 
 <span class="cp">{{</span> <span class="s2">&quot;aabbcc&quot;</span><span class="o">|</span><span class="nf">split</span><span class="o">(</span><span class="s1">&#39;&#39;</span><span class="o">,</span> <span class="m">2</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
-<span class="c">{# returns [aa, bb, cc] #}</span><span class="x"></span>
+<span class="c">{# returns [&#39;aa&#39;, &#39;bb&#39;, &#39;cc&#39;] #}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
 <div class="admonition-wrapper">
@@ -161,6 +171,15 @@ chunks. Length is set by the <tt class="docutils literal"><code>limit</code></tt
 <p class="last">Internally, Twig uses the PHP <a class="reference external" href="http://php.net/explode">explode</a> or <a class="reference external" href="http://php.net/str_split">str_split</a> (if delimiter is
 empty) functions for string splitting.</p>
 </div></div>
+<div class="section" id="arguments">
+<h2>Arguments<a class="headerlink" href="split.html#arguments" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><tt class="docutils literal"><code>delimiter</code></tt>: The delimiter</li>
+<li><tt class="docutils literal"><code>limit</code></tt>:     The limit argument</li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 
     </div>

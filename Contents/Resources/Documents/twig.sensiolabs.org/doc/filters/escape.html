@@ -92,6 +92,16 @@
                                                                     <a href="index.html" accesskey="U">Filters</a> &raquo;
                             <tt class="docutils literal"><code>escape</code></tt>
                 <div class="infobar clearfix">
+                    <div id="doc-toc" class="infobar-box">
+            <h3>Table of Contents</h3>
+            <ul>
+<li><a class="reference internal" href="escape.html#"><tt class="docutils literal"><code>escape</code></tt></a><ul>
+<li><a class="reference internal" href="escape.html#arguments">Arguments</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
         
         <div class="infobar-box">
             <h3>Questions &amp; Feedback</h3>
@@ -185,18 +195,27 @@ escaping strategy:</p>
 </td></tr></table></div></div>
 <p>When using a variable as the escaping strategy, you should disable
 automatic escaping:</p>
-<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="o">..</span> <span class="nx">code</span><span class="o">-</span><span class="nx">block</span><span class="o">::</span> <span class="na">jinja</span>
+<div class="literal-block"><div class="last highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">set</span> <span class="nv">strategy</span> <span class="o">=</span> <span class="s1">&#39;html&#39;</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span> <span class="k">autoescape</span> <span class="s1">&#39;html&#39;</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    </span><span class="cp">{{</span> <span class="nv">var</span><span class="o">|</span><span class="nf">escape</span><span class="o">(</span><span class="nv">strategy</span><span class="o">)|</span><span class="nf">raw</span> <span class="cp">}}</span><span class="x"> </span><span class="c">{# won&#39;t be double-escaped #}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endautoescape</span> <span class="cp">%}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
-<blockquote class="last">
-<div><p>{% set strategy = 'html' %}</p>
-<dl class="docutils">
-<dt>{% autoescape 'html' %}</dt>
-<dd>{{ var|escape(strategy)|raw }} {# won't be double-escaped #}</dd>
-</dl>
-<p>{% endautoescape %}</p>
-</div></blockquote>
 </div></div>
+<div class="section" id="arguments">
+<h2>Arguments<a class="headerlink" href="escape.html#arguments" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><tt class="docutils literal"><code>strategy</code></tt>: The escaping strategy</li>
+<li><tt class="docutils literal"><code>charset</code></tt>:  The string charset</li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 
     </div>

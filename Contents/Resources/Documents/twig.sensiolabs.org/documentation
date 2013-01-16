@@ -169,11 +169,11 @@
                                     <li><a href="doc/tags/import.html">import</a></li>
                                     <li><a href="doc/tags/include.html">include</a></li>
                                     <li><a href="doc/tags/macro.html">macro</a></li>
-                                    <li><a href="doc/tags/raw.html">raw</a></li>
                                     <li><a href="doc/tags/sandbox.html">sandbox</a></li>
                                     <li><a href="doc/tags/set.html">set</a></li>
                                     <li><a href="doc/tags/spaceless.html">spaceless</a></li>
                                     <li><a href="doc/tags/use.html">use</a></li>
+                                    <li><a href="doc/tags/verbatim.html">verbatim</a></li>
                             </ul>
         </div>
             <div class="builtin-reference">
@@ -217,6 +217,7 @@
                                     <li><a href="doc/functions/cycle.html">cycle</a></li>
                                     <li><a href="doc/functions/date.html">date</a></li>
                                     <li><a href="dump">dump</a></li>
+                                    <li><a href="doc/functions/include.html">include</a></li>
                                     <li><a href="doc/functions/parent.html">parent</a></li>
                                     <li><a href="doc/functions/random.html">random</a></li>
                                     <li><a href="doc/functions/range.html">range</a></li>

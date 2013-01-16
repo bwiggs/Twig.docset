@@ -92,6 +92,16 @@
                                                                     <a href="index.html" accesskey="U">Filters</a> &raquo;
                             <tt class="docutils literal docutils literal"><code>slice</code></tt>
                 <div class="infobar clearfix">
+                    <div id="doc-toc" class="infobar-box">
+            <h3>Table of Contents</h3>
+            <ul>
+<li><a class="reference internal" href="slice.html#"><tt class="docutils literal"><code>slice</code></tt></a><ul>
+<li><a class="reference internal" href="slice.html#arguments">Arguments</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
         
         <div class="infobar-box">
             <h3>Questions &amp; Feedback</h3>
@@ -146,15 +156,27 @@
 </pre></div>
 </td></tr></table></div></div>
 <p>As syntactic sugar, you can also use the <tt class="docutils literal"><code>[]</code></tt> notation:</p>
-<div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">for</span> <span class="nv">i</span> <span class="k">in</span> <span class="o">[</span><span class="m">1</span><span class="o">,</span> <span class="m">2</span><span class="o">,</span> <span class="m">3</span><span class="o">,</span> <span class="m">4</span><span class="o">][</span><span class="nv">start</span><span class="o">:</span><span class="nv">length</span><span class="o">]</span> <span class="cp">%}</span><span class="x"></span>
+<div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">for</span> <span class="nv">i</span> <span class="k">in</span> <span class="o">[</span><span class="m">1</span><span class="o">,</span> <span class="m">2</span><span class="o">,</span> <span class="m">3</span><span class="o">,</span> <span class="m">4</span><span class="o">][</span><span class="nv">start</span><span class="o">:</span><span class="nv">length</span><span class="o">]</span> <span class="cp">%}</span><span class="x"></span>
 <span class="x">    </span><span class="c">{# ... #}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
 
 <span class="cp">{{</span> <span class="s1">&#39;1234&#39;</span><span class="o">[</span><span class="m">1</span><span class="o">:</span><span class="m">2</span><span class="o">]</span> <span class="cp">}}</span><span class="x"></span>
+
+<span class="c">{# you can omit the first argument -- which is the same as 0 #}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="s1">&#39;1234&#39;</span><span class="o">[:</span><span class="m">2</span><span class="o">]</span> <span class="cp">}}</span><span class="x"> </span><span class="c">{# will display &quot;12&quot; #}</span><span class="x"></span>
+
+<span class="c">{# you can omit the last argument -- which will select everything till the end #}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="s1">&#39;1234&#39;</span><span class="o">[</span><span class="m">2</span><span class="o">:]</span> <span class="cp">}}</span><span class="x"> </span><span class="c">{# will display &quot;34 #}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
 <p>The <tt class="docutils literal"><code>slice</code></tt> filter works as the <a class="reference external" href="http://php.net/array_slice">array_slice</a> PHP function for arrays and
@@ -172,6 +194,16 @@ up until the end of the variable.</p>
 <div class="note"></div><div class="admonition admonition-note"><p class="first admonition-title">Note</p>
 <p class="last">It also works with objects implementing the <a class="reference external" href="http://php.net/manual/en/class.traversable.php">Traversable</a> interface.</p>
 </div></div>
+<div class="section" id="arguments">
+<h2>Arguments<a class="headerlink" href="slice.html#arguments" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><tt class="docutils literal"><code>start</code></tt>:         The start of the slice</li>
+<li><tt class="docutils literal"><code>length</code></tt>:        The size of the slice</li>
+<li><tt class="docutils literal"><code>preserve_keys</code></tt>: Whether to preserve key or not (when the input is an array)</li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 
     </div>

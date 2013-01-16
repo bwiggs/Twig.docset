@@ -103,6 +103,7 @@
 </li>
 <li><a class="reference internal" href="templates.html#filters">Filters</a></li>
 <li><a class="reference internal" href="templates.html#functions">Functions</a></li>
+<li><a class="reference internal" href="templates.html#named-arguments">Named Arguments</a></li>
 <li><a class="reference internal" href="templates.html#control-structure">Control Structure</a></li>
 <li><a class="reference internal" href="templates.html#comments">Comments</a></li>
 <li><a class="reference internal" href="templates.html#including-other-templates">Including other Templates</a></li>
@@ -223,6 +224,7 @@ result of an expression to the template.</p>
 <li><em>Coda 2</em> via the <a class="reference external" href="https://github.com/muxx/Twig-HTML.mode">other Twig syntax mode</a></li>
 <li><em>Komodo</em> and <em>Komodo Edit</em> via the Twig highlight/syntax check mode</li>
 <li><em>Notepad++</em> via the <a class="reference external" href="https://github.com/Banane9/notepadplusplus-twig">Notepad++ Twig Highlighter</a></li>
+<li><em>Emacs</em> via <a class="reference external" href="http://web-mode.org/">web-mode.el</a></li>
 </ul>
 </div>
 <div class="section" id="variables">
@@ -345,6 +347,57 @@ progression of integers:</p>
 </td></tr></table></div></div>
 <p>Go to the <a class="reference internal" href="functions/index.html"><em>functions</em></a> page to learn more about the
 built-in functions.</p>
+</div>
+<div class="section" id="named-arguments">
+<h2>Named Arguments<a class="headerlink" href="templates.html#named-arguments" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.12: </span>Support for named arguments was added in Twig 1.12.</p>
+<p>Arguments for filters and functions can also be passed as <em>named arguments</em>:</p>
+<div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">for</span> <span class="nv">i</span> <span class="k">in</span> <span class="nv">range</span><span class="o">(</span><span class="nv">low</span><span class="o">=</span><span class="m">1</span><span class="o">,</span> <span class="nv">high</span><span class="o">=</span><span class="m">10</span><span class="o">,</span> <span class="nv">step</span><span class="o">=</span><span class="m">2</span><span class="o">)</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    </span><span class="cp">{{</span> <span class="nv">i</span> <span class="cp">}}</span><span class="x">,</span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</td></tr></table></div></div>
+<p>Using named arguments makes your templates more explicit about the meaning of
+the values you pass as arguments:</p>
+<div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{{</span> <span class="nv">data</span><span class="o">|</span><span class="nf">convert_encoding</span><span class="o">(</span><span class="s1">&#39;UTF-8&#39;</span><span class="o">,</span> <span class="s1">&#39;iso-2022-jp&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
+
+<span class="c">{# versus #}</span><span class="x"></span>
+
+<span class="cp">{{</span> <span class="nv">data</span><span class="o">|</span><span class="nf">convert_encoding</span><span class="o">(</span><span class="nv">from</span><span class="o">=</span><span class="s1">&#39;iso-2022-jp&#39;</span><span class="o">,</span> <span class="nv">to</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</td></tr></table></div></div>
+<p>Named arguments also allow you to skip some arguments for which you don't want
+to change the default value:</p>
+<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="o">..</span> <span class="nx">code</span><span class="o">-</span><span class="nx">block</span><span class="o">::</span> <span class="na">jinja</span>
+</pre></div>
+</td></tr></table></div></div>
+<blockquote>
+<div><p>{# the first argument is the date format, which defaults to the global date format if null is passed #}
+{{ &quot;now&quot;<a href="templates.html#id1"><span class="problematic" id="id2">|</span></a>date(null, &quot;Europe/Paris&quot;) }}</p>
+<p>{# or skip the format value by using a named argument for the timezone #}
+{{ &quot;now&quot;<a href="templates.html#id3"><span class="problematic" id="id4">|</span></a>date(timezone=&quot;Europe/Paris&quot;) }}</p>
+</div></blockquote>
+<p>You can also use both positional and named arguments in one call, which is not
+recommended as it can be confusing:</p>
+<div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">{# both work #}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="s2">&quot;now&quot;</span><span class="o">|</span><span class="nf">date</span><span class="o">(</span><span class="s1">&#39;d/m/Y H:i&#39;</span><span class="o">,</span> <span class="nv">timezone</span><span class="o">=</span><span class="s2">&quot;Europe/Paris&quot;</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
+<span class="cp">{{</span> <span class="s2">&quot;now&quot;</span><span class="o">|</span><span class="nf">date</span><span class="o">(</span><span class="nv">timezone</span><span class="o">=</span><span class="s2">&quot;Europe/Paris&quot;</span><span class="o">,</span> <span class="s1">&#39;d/m/Y H:i&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</td></tr></table></div></div>
+<div class="admonition-wrapper">
+<div class="tip"></div><div class="admonition admonition-tip"><p class="first admonition-title">Tip</p>
+<p class="last">Each function and filter documentation page has a section where the names
+of all arguments are listed when supported.</p>
+</div></div>
 </div>
 <div class="section" id="control-structure">
 <h2>Control Structure<a class="headerlink" href="templates.html#control-structure" title="Permalink to this headline">¶</a></h2>
@@ -607,10 +660,13 @@ expression:</p>
 <div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{{</span> <span class="s1">&#39;{{&#39;</span> <span class="cp">}}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
-<p>For bigger sections it makes sense to mark a block <a class="reference internal" href="tags/raw.html"><em>raw</em></a>.</p>
+<p>For bigger sections it makes sense to mark a block
+<a class="reference internal" href="tags/verbatim.html"><em>verbatim</em></a>.</p>
 </div>
 <div class="section" id="macros">
 <h2>Macros<a class="headerlink" href="templates.html#macros" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.12: </span>Support for default argument values was added in Twig 1.12.</p>
 <p>Macros are comparable with functions in regular programming languages. They
 are useful to reuse often used HTML fragments to not repeat yourself.</p>
 <p>A macro is defined via the <a class="reference internal" href="tags/macro.html"><em>macro</em></a> tag. Here is a small example
@@ -648,6 +704,15 @@ current namespace via the <a class="reference internal" href="tags/from.html"><e
 <span class="x">    &lt;dt&gt;Password&lt;/dt&gt;</span>
 <span class="x">    &lt;dd&gt;</span><span class="cp">{{</span> <span class="nv">input_field</span><span class="o">(</span><span class="s1">&#39;password&#39;</span><span class="o">,</span> <span class="s1">&#39;&#39;</span><span class="o">,</span> <span class="s1">&#39;password&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/dd&gt;</span>
 <span class="x">&lt;/dl&gt;</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>A default value can also be defined for macro arguments when not provided in a
+macro call:</p>
+<div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">macro</span> <span class="nv">input</span><span class="o">(</span><span class="nv">name</span><span class="o">,</span> <span class="nv">value</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">,</span> <span class="nv">type</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="o">,</span> <span class="nv">size</span> <span class="o">=</span> <span class="m">20</span><span class="o">)</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    &lt;input type=&quot;</span><span class="cp">{{</span> <span class="nv">type</span> <span class="cp">}}</span><span class="x">&quot; name=&quot;</span><span class="cp">{{</span> <span class="nv">name</span> <span class="cp">}}</span><span class="x">&quot; value=&quot;</span><span class="cp">{{</span> <span class="nv">value</span><span class="o">|</span><span class="nf">e</span> <span class="cp">}}</span><span class="x">&quot; size=&quot;</span><span class="cp">{{</span> <span class="nv">size</span> <span class="cp">}}</span><span class="x">&quot; /&gt;</span>
+<span class="cp">{%</span> <span class="k">endmacro</span> <span class="cp">%}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
 </div>
@@ -826,18 +891,31 @@ tests.</p>
 </div>
 <div class="section" id="other-operators">
 <h3>Other Operators<a class="headerlink" href="templates.html#other-operators" title="Permalink to this headline">¶</a></h3>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.12.0: </span>Support for the extended ternary operator was added in Twig 1.12.0.</p>
 <p>The following operators are very useful but don't fit into any of the other
 categories:</p>
-<ul class="simple">
-<li><tt class="docutils literal"><code>..</code></tt>: Creates a sequence based on the operand before and after the
+<ul>
+<li><p class="first"><tt class="docutils literal"><code>..</code></tt>: Creates a sequence based on the operand before and after the
 operator (this is just syntactic sugar for the <a class="reference internal" href="functions/range.html"><em>range</em></a>
-function).</li>
-<li><tt class="docutils literal"><code>|</code></tt>: Applies a filter.</li>
-<li><tt class="docutils literal"><code>~</code></tt>: Converts all operands into strings and concatenates them. <tt class="docutils literal"><code>{{ &quot;Hello
+function).</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><code>|</code></tt>: Applies a filter.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><code>~</code></tt>: Converts all operands into strings and concatenates them. <tt class="docutils literal"><code>{{ &quot;Hello
 &quot; ~ name ~ &quot;!&quot; }}</code></tt> would return (assuming <tt class="docutils literal"><code>name</code></tt> is <tt class="docutils literal"><code>'John'</code></tt>) <tt class="docutils literal"><code>Hello
-John!</code></tt>.</li>
-<li><tt class="docutils literal"><code>.</code></tt>, <tt class="docutils literal"><code>[]</code></tt>: Gets an attribute of an object.</li>
-<li><tt class="docutils literal"><code>?:</code></tt>: The PHP ternary operator: <tt class="docutils literal"><code>{{ foo ? 'yes' : 'no' }}</code></tt></li>
+John!</code></tt>.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><code>.</code></tt>, <tt class="docutils literal"><code>[]</code></tt>: Gets an attribute of an object.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><code>?:</code></tt>: The ternary operator:</p>
+<div class="literal-block"><div class="highlight-jinja"><pre>{{ foo ? 'yes' : 'no' }}
+
+{# as of Twig 1.12.0 #}
+{{ foo ?: 'no' }} == {{ foo ? foo : 'no' }}
+{{ foo ? 'yes' }} == {{ foo ? 'yes' : '' }}</pre>
+</div></div>
+</li>
 </ul>
 </div>
 <div class="section" id="string-interpolation">
@@ -914,7 +992,7 @@ of a tag:</p>
 <p>Twig can be easily extended.</p>
 <p>If you are looking for new tags, filters, or functions, have a look at the Twig official
 <a class="reference external" href="http://github.com/fabpot/Twig-extensions">extension repository</a>.</p>
-<p>If you want to create your own, read the <a class="reference internal" href="advanced.html#creating-extensions"><em>Creating an
+<p>If you want to create your own, read the <a class="reference internal" href="advanced_legacy.html#creating-extensions"><em>Creating an
 Extension</em></a> chapter.</p>
 </div>
 </div>

@@ -505,11 +505,7 @@ environment, making it safe to evaluated untrusted code.</li>
 <li><em>Twig_Extension_Optimizer</em>: Optimizers the node tree before compilation.</li>
 </ul>
 <p>The core, escaper, and optimizer extensions do not need to be added to the
-Twig environment, as they are registered by default. You can disable an
-already registered extension:</p>
-<div class="literal-block"><div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nv">$twig</span><span class="o">-&gt;</span><span class="na">removeExtension</span><span class="p">(</span><span class="s1">&#39;escaper&#39;</span><span class="p">);</span>
-</pre></div>
-</td></tr></table></div></div>
+Twig environment, as they are registered by default.</p>
 </div>
 <div class="section" id="built-in-extensions">
 <h2>Built-in Extensions<a class="headerlink" href="api.html#built-in-extensions" title="Permalink to this headline">¶</a></h2>
@@ -539,7 +535,7 @@ extensions.</p>
 <li><tt class="docutils literal"><code>do</code></tt></li>
 <li><tt class="docutils literal"><code>embed</code></tt></li>
 <li><tt class="docutils literal"><code>flush</code></tt></li>
-<li><tt class="docutils literal"><code>raw</code></tt></li>
+<li><tt class="docutils literal"><code>verbatim</code></tt></li>
 <li><tt class="docutils literal"><code>sandbox</code></tt></li>
 <li><tt class="docutils literal"><code>use</code></tt></li>
 </ul>

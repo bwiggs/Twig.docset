@@ -10,7 +10,7 @@
     <meta name="Description" content="Twig - The flexible, fast, and secure template engine for PHP" />
     <meta name="Keywords" content="twig, templating, template, engine, template engine, template language, php" />
 
-    <title>raw - Documentation - Twig - The flexible, fast, and secure PHP template engine</title>
+    <title>verbatim - Documentation - Twig - The flexible, fast, and secure PHP template engine</title>
 
     <link href="../../css/reset-min.css" rel="stylesheet" type="text/css" />
     <link href="../../css/base.css" rel="stylesheet" type="text/css" />
@@ -90,7 +90,7 @@
     <div class="bd">
       <div class="content">
                                                                     <a href="index.html" accesskey="U">Tags</a> &raquo;
-                            <tt class="docutils literal docutils literal docutils literal"><code>raw</code></tt>
+                            <tt class="docutils literal docutils literal docutils literal"><code>verbatim</code></tt>
                 <div class="infobar clearfix">
         
         <div class="infobar-box">
@@ -98,7 +98,7 @@
             <div class="feedback">
                 <p>
                   <strong>Found a typo or an error?</strong><br />
-                  Want to improve this document? <a href="https://github.com/fabpot/Twig/edit/master/doc/tags/raw.rst">Edit</a> it.
+                  Want to improve this document? <a href="https://github.com/fabpot/Twig/edit/master/doc/tags/verbatim.rst">Edit</a> it.
                 </p>
                 <p>
                   <strong>Need support or have a technical question?</strong><br />
@@ -117,26 +117,33 @@
     </div>
 
     <div class="body-web">
-        <div class="section" id="raw">
-<h1><tt class="docutils literal"><code>raw</code></tt><a class="headerlink" href="raw.html#raw" title="Permalink to this headline">¶</a></h1>
-<p>The <tt class="docutils literal"><code>raw</code></tt> tag marks sections as being raw text that should not be parsed.
-For example to put Twig syntax as example into a template you can use this
-snippet:</p>
+        <div class="section" id="verbatim">
+<h1><tt class="docutils literal"><code>verbatim</code></tt><a class="headerlink" href="verbatim.html#verbatim" title="Permalink to this headline">¶</a></h1>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.12: </span>The <tt class="docutils literal"><code>verbatim</code></tt> tag was added in Twig 1.12 (it was named <tt class="docutils literal"><code>raw</code></tt> before).</p>
+<p>The <tt class="docutils literal"><code>verbatim</code></tt> tag marks sections as being raw text that should not be
+parsed. For example to put Twig syntax as example into a template you can use
+this snippet:</p>
 <div class="literal-block"><div class="highlight-jinja"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
 5
 6
-7</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">raw</span> <span class="cp">%}</span>
-    &lt;ul&gt;
-    {% for item in seq %}
-        &lt;li&gt;{{ item }}&lt;/li&gt;
-    {% endfor %}
-    &lt;/ul&gt;
-<span class="cp">{%</span> <span class="k">endraw</span> <span class="cp">%}</span><span class="x"></span>
+7</pre></div></td><td class="code"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">verbatim</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    &lt;ul&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">item</span> <span class="k">in</span> <span class="nv">seq</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">        &lt;li&gt;</span><span class="cp">{{</span> <span class="nv">item</span> <span class="cp">}}</span><span class="x">&lt;/li&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">    &lt;/ul&gt;</span>
+<span class="cp">{%</span> <span class="k">endverbatim</span> <span class="cp">%}</span><span class="x"></span>
 </pre></div>
 </td></tr></table></div></div>
+<div class="admonition-wrapper">
+<div class="note"></div><div class="admonition admonition-note"><p class="first admonition-title">Note</p>
+<p class="last">The <tt class="docutils literal"><code>verbatim</code></tt> tag works in the exact same way as the old <tt class="docutils literal"><code>raw</code></tt> tag,
+but was renamed to avoid confusion with the <tt class="docutils literal"><code>raw</code></tt> filter.</p>
+</div></div>
 </div>
 
     </div>

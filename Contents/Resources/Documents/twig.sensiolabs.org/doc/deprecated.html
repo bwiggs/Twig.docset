@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="Author" content="Sensio Labs" />
+    <meta name="Language" content="en" />
+    <meta name="Copyright" content="Sensio" />
+    <meta name="Publisher" content="Sensio" />
+    <meta name="Description" content="Twig - The flexible, fast, and secure template engine for PHP" />
+    <meta name="Keywords" content="twig, templating, template, engine, template engine, template language, php" />
+
+    <title>Deprecated Features - Documentation - Twig - The flexible, fast, and secure PHP template engine</title>
+
+    <link href="../css/reset-min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/colors.css" rel="stylesheet" type="text/css" />
+    <link href="../css/code.css" rel="stylesheet" type="text/css" />
+    <link href="../css/pygments.css" rel="stylesheet" type="text/css" />
+
+    
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/twig-project" />
+
+    <link href="http://connect.sensiolabs.com/css/sln.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript">
+        (function(w, d, s) {
+            function go() {
+                var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.src = url; js.id = id;
+                    fjs.parentNode.insertBefore(js, fjs);
+                };
+                load('https://connect.sensiolabs.com/sln.js?customize_url=/js/sln_customize.js', 'sln_bar');
+            }
+            if (w.addEventListener) { w.addEventListener("load", go, false); }
+            else if (w.attachEvent) { w.attachEvent("onload",go); }
+        } (window, document, 'script'));
+    </script>
+
+    <!--[if IE 6]>
+      <script type="text/javascript" src="/js/DD_belatedPNG_0.0.7a-min.js"></script>
+      <script type="text/javascript">
+        DD_belatedPNG.fix('.png_fix');
+      </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10931939-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="sln"></div>
+    <div class="hd">
+      <div class="illustration png_fix">
+        <div class="content">
+          <div class="sensio_product">
+            <img class="png_fix" src="../images/sensio-labs-product.png" alt="a Sensio Labs Product" />
+          </div>
+          <div class="clearfix">
+            <div class="logo_header"><a href="../index.html">TWIG</a></div>
+            <h1 class="title_header">
+              The flexible, fast, and secure<br />template engine for PHP
+            </h1>
+          </div>
+
+          <div class="menu">
+            <ul>
+              <li><a href="../index.html">ABOUT</a></li>
+              <li><a class="active" href="../documentation">DOCUMENTATION</a></li>
+              <li><a href="http://blog.twig.sensiolabs.org/">BLOG</a></li>
+              <li><a href="../development">DEVELOPMENT</a></li>
+              <li><a href="../contributors">CONTRIBUTORS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bd">
+      <div class="content">
+                        <div class="infobar clearfix">
+                    <div id="doc-toc" class="infobar-box">
+            <h3>Table of Contents</h3>
+            <ul>
+<li><a class="reference internal" href="deprecated.html#">Deprecated Features</a><ul>
+<li><a class="reference internal" href="deprecated.html#token-parsers">Token Parsers</a></li>
+<li><a class="reference internal" href="deprecated.html#extensions">Extensions</a></li>
+<li><a class="reference internal" href="deprecated.html#pear">PEAR</a></li>
+<li><a class="reference internal" href="deprecated.html#filters">Filters</a></li>
+<li><a class="reference internal" href="deprecated.html#functions">Functions</a></li>
+<li><a class="reference internal" href="deprecated.html#tests">Tests</a></li>
+<li><a class="reference internal" href="deprecated.html#interfaces">Interfaces</a></li>
+<li><a class="reference internal" href="deprecated.html#globals">Globals</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        
+        <div class="infobar-box">
+            <h3>Questions &amp; Feedback</h3>
+            <div class="feedback">
+                <p>
+                  <strong>Found a typo or an error?</strong><br />
+                  Want to improve this document? <a href="https://github.com/fabpot/Twig/edit/master/doc/deprecated.rst">Edit</a> it.
+                </p>
+                <p>
+                  <strong>Need support or have a technical question?</strong><br />
+                  Post to the <a href="http://groups.google.com/group/twig-users">user mailing-list</a>.
+                 </p>
+            </div>
+
+            <h3>License</h3>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" src="http://symfony.com/images/license.png" /></a>
+                Twig <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/MovingImage" rel="dc:type">documentation</span> is licensed under a
+                Creative Commons Attribution-Share Alike 3.0
+                Unported <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">License</a>.
+            </div>
+        </div>
+    </div>
+
+    <div class="body-web">
+        <div class="section" id="deprecated-features">
+<h1>Deprecated Features<a class="headerlink" href="deprecated.html#deprecated-features" title="Permalink to this headline">¶</a></h1>
+<p>This document lists all deprecated features in Twig. Deprecated features are
+kept for backward compatibility and removed in the next major release (a
+feature that was deprecated in Twig 1.x is removed in Twig 2.0).</p>
+<div class="section" id="token-parsers">
+<h2>Token Parsers<a class="headerlink" href="deprecated.html#token-parsers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 1.x, the token parser broker sub-system is deprecated. The
+following class and interface will be removed in 2.0:<ul>
+<li><tt class="docutils literal"><code>Twig_TokenParserBrokerInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_TokenParserBroker</code></tt></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="extensions">
+<h2>Extensions<a class="headerlink" href="deprecated.html#extensions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 1.x, the ability to remove an extension is deprecated and the
+<tt class="docutils literal"><code>Twig_Environment::removeExtension()</code></tt> method will be removed in 2.0.</li>
+</ul>
+</div>
+<div class="section" id="pear">
+<h2>PEAR<a class="headerlink" href="deprecated.html#pear" title="Permalink to this headline">¶</a></h2>
+<p>PEAR support will be discontinued in Twig 2.0, and no PEAR packages will be
+provided. Use Composer instead.</p>
+</div>
+<div class="section" id="filters">
+<h2>Filters<a class="headerlink" href="deprecated.html#filters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 1.x, use <tt class="docutils literal"><code>Twig_SimpleFilter</code></tt> to add a filter. The following
+classes and interfaces will be removed in 2.0:<ul>
+<li><tt class="docutils literal"><code>Twig_FilterInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_FilterCallableInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Filter</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Filter_Function</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Filter_Method</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Filter_Node</code></tt></li>
+</ul>
+</li>
+<li>As of Twig 2.x, the <tt class="docutils literal"><code>Twig_SimpleFilter</code></tt> class is deprecated and will be
+removed in Twig 3.x (use <tt class="docutils literal"><code>Twig_Filter</code></tt> instead). In Twig 2.x,
+<tt class="docutils literal"><code>Twig_SimpleFilter</code></tt> is just an alias for <tt class="docutils literal"><code>Twig_Filter</code></tt>.</li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="deprecated.html#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 1.x, use <tt class="docutils literal"><code>Twig_SimpleFunction</code></tt> to add a function. The following
+classes and interfaces will be removed in 2.0:<ul>
+<li><tt class="docutils literal"><code>Twig_FunctionInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_FunctionCallableInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Function</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Function_Function</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Function_Method</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Function_Node</code></tt></li>
+</ul>
+</li>
+<li>As of Twig 2.x, the <tt class="docutils literal"><code>Twig_SimpleFunction</code></tt> class is deprecated and will be
+removed in Twig 3.x (use <tt class="docutils literal"><code>Twig_Function</code></tt> instead). In Twig 2.x,
+<tt class="docutils literal"><code>Twig_SimpleFunction</code></tt> is just an alias for <tt class="docutils literal"><code>Twig_Function</code></tt>.</li>
+</ul>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="deprecated.html#tests" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 1.x, use <tt class="docutils literal"><code>Twig_SimpleTest</code></tt> to add a test. The following classes
+and interfaces will be removed in 2.0:<ul>
+<li><tt class="docutils literal"><code>Twig_TestInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_TestCallableInterface</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Test</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Test_Function</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Test_Method</code></tt></li>
+<li><tt class="docutils literal"><code>Twig_Test_Node</code></tt></li>
+</ul>
+</li>
+<li>As of Twig 2.x, the <tt class="docutils literal"><code>Twig_SimpleTest</code></tt> class is deprecated and will be
+removed in Twig 3.x (use <tt class="docutils literal"><code>Twig_Test</code></tt> instead). In Twig 2.x,
+<tt class="docutils literal"><code>Twig_SimpleTest</code></tt> is just an alias for <tt class="docutils literal"><code>Twig_Test</code></tt>.</li>
+</ul>
+</div>
+<div class="section" id="interfaces">
+<h2>Interfaces<a class="headerlink" href="deprecated.html#interfaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 2.x, the following interfaces are deprecated and empty (they will
+be removed in Twig 3.0):</li>
+<li><tt class="docutils literal"><code>Twig_CompilerInterface</code></tt>     (use <tt class="docutils literal"><code>Twig_Compiler</code></tt> instead)</li>
+<li><tt class="docutils literal"><code>Twig_LexerInterface</code></tt>        (use <tt class="docutils literal"><code>Twig_Lexer</code></tt> instead)</li>
+<li><tt class="docutils literal"><code>Twig_NodeInterface</code></tt>         (use <tt class="docutils literal"><code>Twig_Node</code></tt> instead)</li>
+<li><tt class="docutils literal"><code>Twig_ParserInterface</code></tt>       (use <tt class="docutils literal"><code>Twig_Parser</code></tt> instead)</li>
+<li><tt class="docutils literal"><code>Twig_ExistsLoaderInterface</code></tt> (merged with <tt class="docutils literal"><code>Twig_LoaderInterface</code></tt>)</li>
+<li><tt class="docutils literal"><code>Twig_TemplateInterface</code></tt>     (use <tt class="docutils literal"><code>Twig_Template</code></tt> instead)</li>
+</ul>
+</div>
+<div class="section" id="globals">
+<h2>Globals<a class="headerlink" href="deprecated.html#globals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>As of Twig 2.x, the ability to register a global variable after the runtime
+or the extensions have been initialized is not possible anymore (but
+changing the value of an already registered global is possible).</li>
+</ul>
+</div>
+</div>
+
+    </div>
+
+            <div class="navigation">
+                            <a accesskey="P" title="iterable" href="tests/iterable.html">
+                    &laquo;&nbsp;iterable
+                </a>
+                        <span class="separator">|</span>                            <a accesskey="N" title="Twig Extensions" href="http://twig.sensiolabs.org/extensions/doc/index.html">
+                    Twig Extensions&nbsp;&raquo;
+                </a>
+                    </div>
+          </div>
+      <div class="ft">
+        <div class="content">
+          This website is powered by PHP and Twig. The Twig <a href="../images/twig-logo.png">logo</a> is &copy; 2010-2012 Sensio Labs
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -92,24 +92,24 @@
                     <h2>Mailing Lists</h2>
 
     <p>
-      Support is given through the <a href="http://groups.google.com/group/twig-users">Twig user mailing-list</a>.
+      Support is given through the <a href="http://groups.google.com/group/twig-users">Twig mailing-list</a>.
 
     </p>
 
     <p>
-      If you want to discuss the enhancement of the library, you can also subscribe to the <a href="http://groups.google.com/group/twig-devs">Twig development mailing-list</a>.
+      If you want to discuss the enhancement of the library, create an <a href="https://github.com/fabpot/Twig/issues">ticket</a> on Github or submit a <a href="development">pull request</a>.
     </p>
 
     <h2>Bug Reports</h2>
 
     <p>
-      If you find a bug, you can <a href="http://github.com/fabpot/Twig/issues">create a ticket</a>.
+      If you find a bug, you can <a href="https://github.com/fabpot/Twig/issues">create a ticket</a>.
     </p>
 
     <h2>Continuous Integration</h2>
 
     <p>
-      Twig is <a href="http://ci.symfony-project.org/project/twig">continuously integrated</a>.
+      Twig is <a href="https://travis-ci.org/fabpot/Twig">continuously integrated</a>.
     </p>
       </div>
       <div class="ft">

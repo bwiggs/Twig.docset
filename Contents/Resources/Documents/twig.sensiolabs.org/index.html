@@ -115,7 +115,7 @@
      <li>
        <a href="doc/intro.html#installation"><img class="install_now png_fix" src="images/install_now.png" alt="Install now" /></a>
        <div class="latest">
-          Stable: <a href="http://pear.twig-project.org/get/Twig-1.11.1.tgz">1.11.1</a>
+          Stable: <a href="http://pear.twig-project.org/get/Twig-1.12.1.tgz">1.12.1</a>
   </div>
       </li>
     </ul>
@@ -222,9 +222,9 @@
 
 
 <div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">autoescape</span> <span class="nv">true</span> <span class="cp">%}</span><span class="x"></span>
-    <span class="cp">{%</span> <span class="k">var</span> <span class="cp">%}</span><span class="x"></span>
-    <span class="cp">{%</span> <span class="k">var</span><span class="o">|</span><span class="nf">raw</span> <span class="cp">%}</span><span class="x">     </span><span class="c">{# var won&#39;t be escaped #}</span><span class="x"></span>
-    <span class="cp">{%</span> <span class="k">var</span><span class="o">|</span><span class="nf">escape</span> <span class="cp">%}</span><span class="x">  </span><span class="c">{# var won&#39;t be doubled-escaped #}</span><span class="x"></span>
+    <span class="cp">{{</span> <span class="k">var</span> <span class="cp">}}</span><span class="x"></span>
+    <span class="cp">{{</span> <span class="k">var</span><span class="o">|</span><span class="nf">raw</span> <span class="cp">}}</span><span class="x">     </span><span class="c">{# var won&#39;t be escaped #}</span><span class="x"></span>
+    <span class="cp">{{</span> <span class="k">var</span><span class="o">|</span><span class="nf">escape</span> <span class="cp">}}</span><span class="x">  </span><span class="c">{# var won&#39;t be doubled-escaped #}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">endautoescape</span> <span class="cp">%}</span><span class="x"></span>
 </pre></div>
 </div>
@@ -237,7 +237,7 @@
             be enabled globally or locally for just some templates:</p>
 
 
-<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">include</span> <span class="s2">&quot;user.html&quot;</span> <span class="k">sandboxed</span> <span class="cp">%}</span><span class="x"></span>
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{{</span> <span class="nv">include</span><span class="o">(</span><span class="s1">'page.html'</span><span class="o">,</span> <span class="nv">sandboxed</span> <span class="o">=</span> <span class="kp">true</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
 </pre></div>
 </div>
 
